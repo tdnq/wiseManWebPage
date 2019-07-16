@@ -21,8 +21,12 @@
 }
 //this page
 #indexPage{
+    .firstView{
+        background-image: url('../fonts/0.jpg');
+        background-size: 100% 100%;
+        height: 100vh;
+    }
     .navbar{
-        padding-top: 6rem;
         img{
             color: red;
         }
@@ -31,10 +35,10 @@
         padding-left: 2rem;  
     }
     .nav-link{
-    color: #0058b7;
-    padding-bottom: 0px;
+    color: white;
     display: inline-block;
     width: auto;
+    padding: 0.1em 1em;
 }
     .nav-item-active{
         border-bottom: 3px solid #ffc533;
@@ -99,6 +103,15 @@
                 .my-badge{
                     opacity: 0.9;
                 }
+                .bigMirror{
+                    -ms-transform: translateY(-4px);
+                    -webkit-transform: translateY(-4px);                    
+                }
+                .myp{
+                    -ms-transform: translateY(-4.7em);
+                    -webkit-transform: translateY(-4.7em); 
+                    .transition(0.3s);                     
+                }
             }
             img{
                 max-width: 150px;
@@ -124,7 +137,7 @@
             //item
         .indexO{
                 .itemT {
-                    top: -45px;
+                    top: -35px;
                 }
                 figcaption{
                         top: 75px;
@@ -185,6 +198,18 @@
                 figcaption{
                     top: 80px;
                     left: 100px;
+                }
+                .myp{
+                    position: absolute;
+                    width: 24%;
+                    top: 6.5em;
+                    background-color: #aec5e1ab;
+                    text-align: center;
+                    border: 1px solid #a7c1e100;
+                    border-radius: 0.5em;
+                    left: 3em;
+                    font-size: 10px;
+                    padding: 0.5em 0.2em 3em 0.5em;
                 }
                 .text-introduction{
                     top: -57px;
@@ -253,3 +278,12 @@
         }
     }
 }
+
+//放大镜部分
+.bigMirror {
+    left: -1em;
+    max-width: 20% !important;
+    .transition(0.3s);
+    transition-delay: 0.2s;
+}
+

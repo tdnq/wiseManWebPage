@@ -8,8 +8,10 @@
   margin-left: 0px;
   margin-right: 0px;
 }
-#indexPage .navbar {
-  padding-top: 6rem;
+#indexPage .firstView {
+  background-image: url('../fonts/0.jpg');
+  background-size: 100% 100%;
+  height: 100vh;
 }
 #indexPage .navbar img {
   color: red;
@@ -18,10 +20,10 @@
   padding-left: 2rem;
 }
 #indexPage .nav-link {
-  color: #0058b7;
-  padding-bottom: 0px;
+  color: white;
   display: inline-block;
   width: auto;
+  padding: 0.1em 1em;
 }
 #indexPage .nav-item-active {
   border-bottom: 3px solid #ffc533;
@@ -76,6 +78,19 @@
 .ennaTitle .ennaItem span:hover .my-badge {
   opacity: 0.9;
 }
+.ennaTitle .ennaItem span:hover .bigMirror {
+  -ms-transform: translateY(-4px);
+  -webkit-transform: translateY(-4px);
+}
+.ennaTitle .ennaItem span:hover .myp {
+  -ms-transform: translateY(-4.7em);
+  -webkit-transform: translateY(-4.7em);
+  transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+}
 .ennaTitle .ennaItem span img {
   max-width: 150px;
   position: relative;
@@ -94,7 +109,7 @@
   color: #c6bdbd;
 }
 .ennaTitle .indexO .itemT {
-  top: -45px;
+  top: -35px;
 }
 .ennaTitle .indexO figcaption {
   top: 75px;
@@ -144,6 +159,18 @@
 .ennaTitle .indexF figcaption {
   top: 80px;
   left: 100px;
+}
+.ennaTitle .indexF .myp {
+  position: absolute;
+  width: 24%;
+  top: 6.5em;
+  background-color: #aec5e1ab;
+  text-align: center;
+  border: 1px solid #a7c1e100;
+  border-radius: 0.5em;
+  left: 3em;
+  font-size: 10px;
+  padding: 0.5em 0.2em 3em 0.5em;
 }
 .ennaTitle .indexF .text-introduction {
   top: -57px;
@@ -211,4 +238,14 @@
   -ms-transition: all 0.5s;
   -o-transition: all 0.5s;
   -webkit-transition: all 0.5s;
+}
+.bigMirror {
+  left: -1em;
+  max-width: 20% !important;
+  transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition-delay: 0.2s;
 }
