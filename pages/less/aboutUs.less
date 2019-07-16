@@ -1,0 +1,122 @@
+// public
+.container-fluid{
+    padding: 0px;
+    max-width: 1366px;
+    min-width: 320px;
+    margin: auto;
+    
+}
+.row{
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.transition(@time){
+    transition: all @time;
+    -moz-transition: all @time;
+    -ms-transition: all @time;
+    -o-transition: all @time;
+    -webkit-transition: all @time;
+}
+
+#aboutUsPage{
+    figure {
+            margin: 0 0 0rem;
+    }
+    .navbar{
+    padding-top: 6rem;
+    img{
+        color: red;
+    }
+    }
+    .navbar-brand {
+        padding-left: 2rem;  
+    }
+    .nav-link{
+    color: #0058b7;
+    padding-bottom: 0px;
+    display: inline-block;
+    width: auto;
+    }
+    .nav-item-active{
+        border-bottom: 3px solid #ffc533;
+    }
+    .firstImg{
+        img{
+            width: 100%;
+            max-height: 480px;
+        }
+    }
+
+    //公司概况
+    .introduction{
+        background-color: #0058b7;
+        height: 170vh;
+        h2{
+            text-align: center;
+            color: white;
+            font-size: 24px;
+        }
+        h3 {
+            color: white;
+            position: relative;
+            left: -4em;
+            top: -1em;
+        }
+        p {
+            color: white;
+            width: 50%;
+            white-space: normal;
+            overflow: hidden;
+            text-indent: 2em;
+            word-wrap: break-word;
+            position: absolute;
+        }
+        .p2{
+            right: -5em;
+            top: 6em;
+        }
+        .col-lg-5{
+            position: relative;
+        }
+        figure{
+            background-color: white;
+            position: relative;
+            height: 150px;
+            margin-top: 5rem;
+            img{
+                max-width: 50%;
+                height: auto;
+                position: absolute;
+            }
+            .img1{
+                right: 0px;
+                right: 10%;
+                top: -100%;
+
+            }
+            .img2 {
+                top: -60%;
+                left: 10%;
+            
+            }
+        }
+        .box2{
+            position: relative;
+            img{
+                max-width: 70%;
+                position: absolute;
+                right: -5%;
+            }
+        }
+        .box3{
+            position: relative;
+            img{
+
+                max-width: 70%;
+                position: absolute;
+                left: -5%;
+            }
+        }
+    }
+}

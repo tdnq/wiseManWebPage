@@ -1,0 +1,102 @@
+.container-fluid {
+  padding: 0px;
+  max-width: 1366px;
+  min-width: 320px;
+  margin: auto;
+}
+.row {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+#aboutUsPage figure {
+  margin: 0 0 0rem;
+}
+#aboutUsPage .navbar {
+  padding-top: 6rem;
+}
+#aboutUsPage .navbar img {
+  color: red;
+}
+#aboutUsPage .navbar-brand {
+  padding-left: 2rem;
+}
+#aboutUsPage .nav-link {
+  color: #0058b7;
+  padding-bottom: 0px;
+  display: inline-block;
+  width: auto;
+}
+#aboutUsPage .nav-item-active {
+  border-bottom: 3px solid #ffc533;
+}
+#aboutUsPage .firstImg img {
+  width: 100%;
+  max-height: 480px;
+}
+#aboutUsPage .introduction {
+  background-color: #0058b7;
+  height: 170vh;
+}
+#aboutUsPage .introduction h2 {
+  text-align: center;
+  color: white;
+  font-size: 24px;
+}
+#aboutUsPage .introduction h3 {
+  color: white;
+  position: relative;
+  left: -4em;
+  top: -1em;
+}
+#aboutUsPage .introduction p {
+  color: white;
+  width: 50%;
+  white-space: normal;
+  overflow: hidden;
+  text-indent: 2em;
+  word-wrap: break-word;
+  position: absolute;
+}
+#aboutUsPage .introduction .p2 {
+  right: -5em;
+  top: 6em;
+}
+#aboutUsPage .introduction .col-lg-5 {
+  position: relative;
+}
+#aboutUsPage .introduction figure {
+  background-color: white;
+  position: relative;
+  height: 150px;
+  margin-top: 5rem;
+}
+#aboutUsPage .introduction figure img {
+  max-width: 50%;
+  height: auto;
+  position: absolute;
+}
+#aboutUsPage .introduction figure .img1 {
+  right: 0px;
+  right: 10%;
+  top: -100%;
+}
+#aboutUsPage .introduction figure .img2 {
+  top: -60%;
+  left: 10%;
+}
+#aboutUsPage .introduction .box2 {
+  position: relative;
+}
+#aboutUsPage .introduction .box2 img {
+  max-width: 70%;
+  position: absolute;
+  right: -5%;
+}
+#aboutUsPage .introduction .box3 {
+  position: relative;
+}
+#aboutUsPage .introduction .box3 img {
+  max-width: 70%;
+  position: absolute;
+  left: -5%;
+}
