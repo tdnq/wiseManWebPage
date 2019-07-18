@@ -19,11 +19,14 @@
 #indexPage .navbar-brand {
   padding-left: 2rem;
 }
+#indexPage .nav-item {
+  margin: 0.1em 1em;
+}
 #indexPage .nav-link {
   color: white;
   display: inline-block;
   width: auto;
-  padding: 0.1em 1em;
+  padding-bottom: 0px;
 }
 #indexPage .nav-item-active {
   border-bottom: 3px solid #ffc533;
@@ -54,7 +57,7 @@
   display: block;
   background-size: 100% 100%;
   width: 280px;
-  height: 200px;
+  height: 220px;
   transition: all 0.5s;
   -webkit-transition: all 0.5s;
   position: relative;
@@ -68,7 +71,7 @@
   -webkit-transform: translateY(-4px);
 }
 .ennaTitle .ennaItem span:hover .text-introduction {
-  color: black;
+  color: #383535;
 }
 .ennaTitle .ennaItem span:hover .roateTh {
   transform: rotate(-90deg);
@@ -102,11 +105,12 @@
   left: 100px;
 }
 .ennaTitle .ennaItem .text-introduction {
-  font-size: 12px;
+  font-size: 14px;
   display: inline-block;
   position: relative;
   height: 60px;
   color: #c6bdbd;
+  font-family: "华文行楷";
 }
 .ennaTitle .indexO .itemT {
   top: -35px;
@@ -132,7 +136,7 @@
 .ennaTitle .indexT .text-introduction {
   height: 60px;
   left: 50px;
-  top: -70px;
+  top: -80px;
 }
 .ennaTitle .indexTh .itemO {
   top: -40px;
@@ -147,7 +151,7 @@
   left: 100px;
 }
 .ennaTitle .indexTh .text-introduction {
-  top: -95px;
+  top: -105px;
   left: 50px;
 }
 .ennaTitle .indexF .itemO {
@@ -173,7 +177,7 @@
   padding: 0.5em 0.2em 3em 0.5em;
 }
 .ennaTitle .indexF .text-introduction {
-  top: -57px;
+  top: -67px;
   left: 50px;
 }
 .moveText {

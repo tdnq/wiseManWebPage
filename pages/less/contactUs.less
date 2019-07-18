@@ -19,11 +19,20 @@
     -webkit-transition: all @time;
 }
 
+.icon {
+    width: 6em;
+    height: 6em;
+    vertical-align: -0.15em;
+    fill: currentColor;
+    overflow: hidden;
+    color:white;
+  }
+
+  //内容
 #ContactUsPage{
     .firstView{
         background-image: url('../fonts/联系方式.jpg');
         background-size: 100% 100%;
-        height: 100vh;
     }
     figure {
             margin: 0 0 0rem;
@@ -36,12 +45,16 @@
     .navbar-brand {
         padding-left: 2rem;  
     }
-    .nav-link{
-    color: white;
-    display: inline-block;
-    width: auto;
-    padding: 0.1em 1em;
-    }
+    .nav-item{
+        margin: 0.1em 1em;        
+   }
+   .nav-link{
+        color: white;
+        display: inline-block;
+        width: auto;
+        padding-bottom: 0px;
+
+}
     .nav-item-active{
         border-bottom: 3px solid #ffc533;
     }
@@ -52,15 +65,24 @@
         }
     }
     .content{
-        margin-top: 50vh;
-        transform: translateY(-60%);
-        -webkit-transform: translateY(-60%);
+        min-height: 100vh;
     }
 }
 .content{
     .contentBox{
-        height: 40vh;
-        width: 100%;
-        background-color: white;
+        height: 48vh;
+        background-image: url("../fonts/资源\ 21_1.png");
+        background-size: 100% 100%;
+        font-size: 16px;
+        max-width: 13.75em;
+        min-width: 12em;
+        figure{
+            text-align: center;
+            padding-top: 2em;
+            color: white;
+            p{
+                margin-top: 3em;
+            }
+        }
     }
 }
