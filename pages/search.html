@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../node_modules/_bootstrap@4.3.1@bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/search.css">
+    <title>Document</title>
+
+    <div class="container-fluid">
+        <div class="totalBox w-75 mx-auto py-4 px-4 myFromBox">
+            <div class="title">
+                <h3>信息检索</h2>
+            </div>
+        <div class="row">
+            <div class="col-lg-2 pl-0">
+              <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">文献检索</a>
+                <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">知识元检索</a>
+                <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">引文检索</a>
+              </div>
+            </div>
+            <div class="col-10 pl-0">
+              <div class="tab-content" id="v-pills-tabContent">
+                <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+                    <!-- 第一个tab内容 -->
+                        <!-- 输入框 -->
+                    <form action="https://cn.bing.com/academic?" method="GET">
+
+                        <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                  <button class="btn dropdown-toggle px-4" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">主题</button>
+                                  <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="#">材料学</a>
+                                    <a class="dropdown-item" href="#">物理学</a>
+                                    <a class="dropdown-item" href="#">光电</a>
+                                  </div>
+                                </div>
+                                <input type="text" name="q" class="form-control" aria-label="Text input with dropdown button" placeholder="科研成果">
+                                <div class="input-group-append">
+                                        <button class="btn my-btn" type="submit" id="button-addon2">
+                                            <svg class="icon" aria-hidden="true" style="height:1.5em;width:1.5em;font-weight:600">
+                                                <use xlink:href="#iconsearch"></use>
+                                            </svg></button>
+                                      </div>
+                              </div>
+                    </form>
+
+                    <!-- 多选按钮 -->
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="customCheck1">
+                        <label class="custom-control-label" for="customCheck1">学术期刊</label>
+                        </div>
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="customCheck2">
+                        <label class="custom-control-label" for="customCheck2">硕博</label>
+                        </div>
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="customCheck3">
+                        <label class="custom-control-label" for="customCheck3">会议</label>
+                        </div>
+
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="customCheck4">
+                        <label class="custom-control-label" for="customCheck4">年鉴</label>
+                        </div>
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="customCheck5">
+                        <label class="custom-control-label" for="customCheck5">专利</label>
+                        </div>
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="customCheck6">
+                        <label class="custom-control-label" for="customCheck6">标准</label>
+                        </div>
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="customCheck7">
+                        <label class="custom-control-label" for="customCheck7">成果</label>
+                        </div>
+                        <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="customCheck8">
+                                <label class="custom-control-label" for="customCheck8">报纸</label>
+                                </div>
+                </div>
+                <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+                    <!-- 第二个 -->
+                    tow
+                </div>
+                <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
+                    <!-- 第三个 -->
+                    three 
+                    </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+    </div>
+
+    <script src="../node_modules/_jquery@3.4.1@jquery/dist/jquery.min.js"></script>
+    <script src="../node_modules/_bootstrap@4.3.1@bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="http://at.alicdn.com/t/font_1298383_83ln9vjda4y.js"></script>
+</head>
+<body>
+    
+</body>
+</html>

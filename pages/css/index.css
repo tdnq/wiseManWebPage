@@ -74,9 +74,9 @@
   color: #383535;
 }
 .ennaTitle .ennaItem span:hover .roateTh {
-  transform: rotate(-90deg);
-  -ms-transform: rotate(-90deg);
-  -webkit-transform: rotate(-90deg);
+  transform: rotateY(180deg);
+  -ms-transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
 }
 .ennaTitle .ennaItem span:hover .my-badge {
   opacity: 0.9;
@@ -102,7 +102,7 @@
   position: relative;
   font-size: 16px;
   top: 75px;
-  left: 100px;
+  left: 116px;
 }
 .ennaTitle .ennaItem .text-introduction {
   font-size: 14px;

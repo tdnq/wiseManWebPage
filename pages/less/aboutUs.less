@@ -4,7 +4,7 @@
     max-width: 1366px;
     min-width: 320px;
     margin: auto;
-    
+    overflow: hidden;
 }
 .row{
     margin-left: 0px;
@@ -82,7 +82,6 @@
             position: relative;
         }
         figure{
-            overflow: hidden;
             background-color: white;
             position: relative;
             height: 150px;
@@ -125,23 +124,10 @@
         // }
         .figureOne{
             cursor: pointer;
-            overflow: visible;
-            &:hover{
-                .img1{
-                    opacity: 1;
-                    right: 10%;
-                }
-            }
         }
         .figureTwo{
             cursor: pointer;
             overflow: visible;
-            &:hover{
-                .img2{
-                    opacity: 1;
-                    left: 10%;
-                }
-            }
         }
     }
 }

@@ -1,0 +1,9 @@
+body,
+html {
+  background-color: #f6f6f8;
+}
+.personInfoRoot {
+  background-color: white;
+  width: 75%;
+  margin: 10vh auto 5rem auto;
+}

@@ -1,0 +1,27 @@
+.myP {
+  letter-spacing: 1.2rem;
+}
+.table thead th {
+  white-space: nowrap;
+}
+.enNaUse {
+  margin: auto;
+  width: 80%;
+}
+.enNaUse .labelBox {
+  display: inline-block;
+  margin-top: 2em;
+  width: 48%;
+  white-space: nowrap;
+}
+.enNaUse .labelBox label {
+  display: inline;
+}
+.enNaUse .labelBox .col-sm-2 {
+  display: inherit;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+.enNaUse label {
+  font-size: 20px;
+}
