@@ -1,0 +1,38 @@
+.left-slide {
+  position: relative;
+}
+.left-slide .circle {
+  position: absolute;
+  max-width: 30%;
+  top: -0.8em;
+  left: 50%;
+}
+.left-slide .line {
+  position: absolute;
+  max-width: 100%;
+}
+.right-slide {
+  position: relative;
+}
+.right-slide .circle {
+  position: absolute;
+  max-width: 30%;
+  top: -0.8em;
+  right: 50%;
+}
+.right-slide .line {
+  position: absolute;
+  max-width: 100%;
+}
+.course {
+  margin-top: 10rem;
+}
+.course .kind-title {
+  border-bottom: 2px solid  #5aa5ff;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+.course .course-content {
+  height: 12rem;
+  background-color: #cebdbd;
+}

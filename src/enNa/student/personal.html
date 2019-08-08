@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../../iframe/bootstrap.min.css">
+    <link rel="stylesheet" href="../public/index.css">
+    <link rel="stylesheet" href="./css/personal.css" type='text/css'>
+    <title>学生个人页</title>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <!-- topBar -->
+        <nav class="navbar navbar-light fixed-top my-bg pt-3">
+            <a class="navbar-brand" href="../../index.html">
+                <img src="../fonts/enNaLogo.png" width="40" height="40" alt="logo">
+            </a>
+            <div class="explore mx-5">
+                <button type="button" id="explore-botton" class="btn myBtn px-4 py-1">探索</button>
+                <div class="explore-content">
+                    <div class="explore-title">
+                        <div class="title-item" id="title-course">课<br />程</div>
+                        <div class="title-item active" id="title-other">其<br />它</div>
+                    </div>
+                    <div class="explore-body pb-5">
+                        <div class="body-item d-none" id="item-course">
+                                <div class="content-item"><a href="../explore/archive.html" class="white">分类1</a><img src="../fonts/arrow.png" width="20em" alt="arrow"></div>
+                                <div class="content-item"><a href="../explore/archive.html" class="white">分类2</a><img src="../fonts/arrow.png" width="20em" alt="arrow"></div>
+                                <div class="content-item"><a href="../explore/archive.html" class="white">分类3</a><img src="../fonts/arrow.png" width="20em" alt="arrow"></div>
+                            <div class="lookAll text-center mt-5">
+                                <p><a href="../explore/index.html">查看全部</a></p>
+                            </div>
+                        </div>
+                        <div class="body-item" id="item-other">
+                            <div class="content-item">学术交流 <img src="../fonts/arrow.png" width="20em" alt="arrow">
+                            </div>
+                            <div class="content-item">前沿资讯 <img src="../fonts/arrow.png" width="20em" alt="arrow">
+                            </div>
+                            <div class="content-item">企业实习 <img src="../fonts/arrow.png" width="20em" alt="arrow">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="input-group ml-5 pl-5 mt-1 mr-auto" id="myInput">
+                <input type="text" class="form-control" placeholder="">
+                <img src="../fonts/search.png" alt="search" width="38" class="">
+            </a>
+            <span class="mr-5">
+                <img src="../fonts/user.png" width="38" alt="user">
+                <p class="d-inline"></p>
+            </span>
+        </nav>
+        <!-- 信息部分 -->
+        <div class="personal-info">
+            <div class="row w-85 mx-auto">
+                <div class="col-2">
+                    <div class="avatar d-flex">
+                        <div class="avatar-content">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-2 pl-5">
+                    <h2>name<img class="edit-img" src="../fonts/edit.png" title="编辑信息" alt="edit"></h2>
+                    <p>university</p>
+                    <p>major</p>
+                </div>
+                <div class="col-2"></div>
+                <div class="col-2 borderRightWhite">
+                    <div class="course">
+                        <img src="../fonts/course.png" alt="course">
+                        <span class="title ml-2">课程数量
+                            <span class="amount">2个</span>
+                        </span>
+
+                    </div>
+                </div>
+                <div class="col-2 borderRightWhite">
+                    <div class="intergral mx-auto">
+                        <img src="../fonts/score.png" alt="intergral">
+                        <span class="title ml-2">嗯呐积分
+                            <span class="amount">666分</span>
+                        </span>
+
+                    </div>
+                </div>
+                <div class="col-2">
+
+                    <div class="enNaMemberr text-center">
+
+                        <button class="btn px-4 mt-5"> <a href="#">嗯呐会员</a> </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 功能部分 -->
+        <div class="studentFunction">
+            <div class="row w-75 mx-auto">
+                <div class="col-8 overHidden">
+                    <nav>
+                        <div class="nav nav-tabs border-bottom-0" id="nav-tab" role="tablist">
+                            <a class="nav-item nav-link border-0 active" id="nav-course-tab" data-toggle="tab"
+                                href="#nav-course" role="tab" aria-controls="nav-course" aria-selected="true">课程</a>
+                            <a class="nav-item nav-link border-0" id="nav-message-tab" data-toggle="tab"
+                                href="#nav-message" role="tab" aria-controls="nav-message" aria-selected="false">消息</a>
+                            <a class="nav-item nav-link border-0" id="nav-resume-tab" data-toggle="tab"
+                                href="#nav-resume" role="tab" aria-controls="nav-resume" aria-selected="false">简历</a>
+                        </div>
+                    </nav>
+                    <img src="../fonts/line.png" alt="-----" class="segmentation">
+                    <div class="tab-content py-3 px-2" id="nav-tabContent">
+                        <!-- 课程 -->
+                        <div class="tab-pane px-0 fade  show active" id="nav-course" role="tabpanel"
+                            aria-labelledby="nav-course-tab">
+                            <div class="row">
+                                <div class="col-5">
+                                    <div class="course-title">
+                                        <div class="course-img">
+
+                                        </div>
+                                        <div class="title">
+                                            <h6 class="text-center py-2">计算机网络</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-5 pr-5">
+                                    <div>
+                                        <p class="mb-1">学习进度：</p>
+                                        <div class="progress">
+                                            <div class="progress-bar" role="progressbar" style="width: 25%"
+                                                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                        <p class="mt-1 mb-1">
+                                            university
+                                        </p>
+                                        <p>
+                                            teacher name
+                                        </p>
+                                        <div class="courseLearnInfo">
+                                            <span class="learn-amount">
+                                                <img src="../fonts/personAmount.png" alt="amount">
+                                                <span>252</span>
+                                            </span>
+                                            <span class="learn-qa ml-5">
+                                                <img src="../fonts/qa.png" alt="qa">
+                                                <span>232</span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-2 text-center px-0 d-flex">
+                                    <button type="button" class="btn start-learn py-1 my-auto mx-auto">开始学习</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 消息 -->
+                        <div class="tab-pane fade position-relative" id="nav-message" role="tabpanel"
+                            aria-labelledby="nav-message-tab">
+                            <span class="qa-font"><img src="../fonts/qa.png" alt="aq"></span>
+                            <div class="open-img text-right">
+                                <img src="../fonts/shouQi.png" alt="close">
+                            </div>
+                            <div class="qa-title mb-5">
+                                <h4>老师回答了你的问题</h4>
+                            </div>
+                            <!-- 老师 -->
+                            <div class="teacher row">
+                                <div class="col-2">
+                                    <div class="teacher-avatar d-flex">
+                                        <div class="avatar-content">
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="col-8">
+                                    <div class="answer">
+                                        <div class="answer-content">
+                                            是非成败转头空
+                                            是非成败转头空
+                                            是非成败转头空
+                                            是非成败转头空
+                                            是非成败转头空
+                                            是非成败转头空
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row diolog mt-5">
+                                <div class="col-8 offset-lg-2">
+                                    <input type="text" class="form-control" placeholder="">
+                                </div>
+                                <div class="col-2">
+                                    <button class="btn send-button px-3">发送</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 简历 -->
+                        <div class="tab-pane fade" id="nav-resume" role="tabpanel"
+                            aria-labelledby="nav-resume-tab">
+                            <div class="row">
+                                <div class="col-6 mt-2">
+                                    <label for="name">姓名:</label>
+                                    <input type="text" class="form-control" id="name" />
+                                </div>
+                                <div class="col-6 mt-2">
+                                    <label>姓名：</label>
+                                    <div class="form-check d-inline-block">
+                                        <input class="form-check-input" type="radio" name="exampleRadios"
+                                            id="exampleRadios1" value="option1" checked>
+                                        <label class="form-check-label w-50" for="exampleRadios1">
+                                            男
+                                        </label>
+                                    </div>
+                                    <div class="form-check d-inline-block">
+                                        <input class="form-check-input" type="radio" name="exampleRadios"
+                                            id="exampleRadios2" value="option2">
+                                        <label class="form-check-label w-50" for="exampleRadios2">
+                                            女
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-6 mt-2">
+                                    <label for="shool">学校:</label>
+                                    <input type="text" class="form-control" id="shool" />
+                                </div>
+                                <div class="col-6 mt-2">
+                                    <label for="political-status">政治面貌:</label>
+                                    <input type="text" class="form-control" id="political-status" />
+                                </div>
+                                <div class="col-6 mt-2">
+                                    <label for="tel">联系电话:</label>
+                                    <input type="text" class="form-control" id="tel" />
+                                </div>
+                                <div class="col-6 mt-2">
+                                    <label for="email">电子邮箱:</label>
+                                    <input type="text" class="form-control" id="email" />
+                                </div>
+                                <div class="col-12 mt-2">
+                                    <label for="address">家庭住址:</label>
+                                    <input type="text" class="form-control w-50 ml-2" id="address" />
+                                </div>
+                                <div class="col-12 mt-2">
+                                    <div>
+                                        <label for="personal-photo">个人照片:</label>
+                                        <span>(请上传个人一寸或二寸证件照)</span>
+                                    </div>
+                                    <input type="text" class="form-control w-50">
+                                    <img src="../fonts/resource.png" alt="upload" class="ml-5" width="40">
+                                    <input type="file" class='form-control opacity-zero' />
+
+                                </div>
+                                <div class="col-12 mt-2">
+                                    <div>
+                                        <label for="personal-learn">学习成绩:</label>
+                                        <span>(请上传成绩单)</span>
+                                    </div>
+
+                                    <input type="text" class="form-control w-50">
+                                    <img src="../fonts/resource.png" alt="upload" class="ml-5" width="40">
+                                    <input type="file" class='form-control opacity-zero' />
+                                </div>
+                                <div class="col-12 mt-2">
+                                    <div>
+                                        <label for="personal-tip">技能证书:</label>
+                                        <span>(请上传相关证件)</span>
+                                    </div>
+                                    <input type="text" class="form-control w-50">
+                                    <img src="../fonts/resource.png" alt="upload" class="ml-5" width="40">
+                                    <input type="file" class='form-control opacity-zero' />
+                                </div>
+                                <div class="col-12 mt-2">
+                                    <div>
+
+                                        <label for="personal-game">获奖经历:</label>
+                                        <span>(请上传参加项目或比赛的相关资料)</span>
+                                    </div>
+                                    <input type="text" class="form-control w-50">
+                                    <img src="../fonts/resource.png" alt="upload" class="ml-5" width="40">
+                                    <input type="file" class='form-control opacity-zero' />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 打卡 -->
+                <div class="col-3 offset-lg-1 text-center">
+                    <div class="punch border-left">
+                        <div class="punch-title">
+                            总打卡天数
+                        </div>
+                        <div class="punch-body">
+                            100
+                        </div>
+                        <div class="punch-footer">
+                            打卡
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 底栏 -->
+        <div class="footer py-5 mt-5">
+            <div class="row w-75 mx-auto">
+                <div class="col-2"><img src="../fonts/bottomLogo.png" alt="logo"></div>
+                <div class="col-2">
+                    <ul class="footer-ul">
+                        <li>学生版</li>
+                        <li>教师版</li>
+                        <li>企业版</li>
+                    </ul>
+                </div>
+                <div class="col-2">
+                    <ul class="footer-ul">
+                        <li>全部课程</li>
+                        <li>前沿资讯</li>
+                        <li>合作高校</li>
+                        <li>合作企业</li>
+                    </ul>
+                </div>
+                <div class="col-2 text-center">
+                    <p>关于我们</p>
+                    <img src="../fonts/bottomSR.png" alt="shengren" width="50">
+                </div>
+                <div class="col-2 text-center">
+                    <p>关注我们</p>
+                    <img src="../fonts/weixin.png" alt="shengren" width="50">
+                </div>
+                <div class="col-2">
+                    <ul class="footer-ul">
+                        <li>手机端下载</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../../iframe/jquery.min.js"></script>
+    <script src="../../iframe//bootstrap.bundle.min.js"></script>
+    <script src="../public/index.js"></script>
+</body>
+
+</html>

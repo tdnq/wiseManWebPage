@@ -1,0 +1,92 @@
+.left-slide {
+  position: relative;
+  width: 100%;
+}
+.left-slide .circle {
+  position: absolute;
+  max-width: 30%;
+  top: -0.4em;
+  left: 50%;
+}
+.left-slide .line {
+  position: absolute;
+  max-width: 100%;
+}
+.btn-send {
+  border-radius: 2rem;
+  background-color: #5aa5ff;
+}
+.right-slide {
+  position: relative;
+  width: 100%;
+}
+.right-slide .circle {
+  position: absolute;
+  max-width: 30%;
+  top: -0.4em;
+  right: 50%;
+}
+.right-slide .line {
+  position: absolute;
+  max-width: 100%;
+}
+.play {
+  padding: 8rem 0rem;
+  margin-top: 74px;
+  background-color: #003366;
+}
+.play .play-content {
+  height: 20rem;
+  background-color: #9ba2a5;
+}
+.play .form-control {
+  height: 1.5rem;
+  border-radius: 2rem;
+}
+.left-sider {
+  position: absolute;
+  padding-top: 84px;
+  left: -220px;
+  width: 220px;
+  height: 100%;
+  background-color: #0058b7;
+}
+.left-sider .sider-teacher-info .avator {
+  display: inline-block;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  background-color: #5aa5ff;
+}
+.left-sider .sider-teacher-info .name {
+  color: white;
+  font-size: 1.5em;
+}
+.left-sider .toggle-maker {
+  display: inline-block;
+  position: absolute;
+  right: -3rem;
+  width: 3rem;
+  height: 4rem;
+  top: 20vh;
+  background-color: #0058b7;
+  border-radius: 0rem 1rem 1rem 0rem;
+}
+.left-sider .unit-info {
+  color: white;
+}
+.left-sider .unit-info .unit-img {
+  height: 4rem;
+  background-color: #9ba2a5;
+  box-shadow: 1px 1px 2px #003366;
+}
+.left-sider .unit-info span a {
+  font-size: 12px;
+  color: white;
+  vertical-align: bottom;
+}
+.left-sider .shortLine {
+  transform: translate(0.5rem, 0.5rem) rotate(0deg);
+  transition: all 0.2s;
+  -webkit-transition: all 0.2s;
+}

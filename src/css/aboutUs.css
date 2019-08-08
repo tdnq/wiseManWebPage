@@ -1,0 +1,239 @@
+.container-fluid {
+  padding: 0px;
+  max-width: 1366px;
+  min-width: 320px;
+  margin: auto;
+  overflow: hidden;
+}
+.w-65 {
+  width: 65%;
+}
+.row {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+.icon {
+  width: 3em;
+  height: 3em;
+  vertical-align: -0.15em;
+  fill: currentColor;
+  overflow: hidden;
+  color: black;
+}
+#aboutUsPage .firstView {
+  background-image: url('../fonts/logobg.png');
+  background-size: 100% 100%;
+  height: 100vh;
+}
+#aboutUsPage figure {
+  margin: 0 0 0rem;
+}
+#aboutUsPage .navbar img {
+  color: red;
+}
+#aboutUsPage .navbar-brand {
+  padding-left: 2rem;
+}
+#aboutUsPage .nav-item {
+  margin: 0.1em 1em;
+}
+#aboutUsPage .nav-link {
+  color: blue;
+  display: inline-block;
+  width: auto;
+  padding-bottom: 0px;
+}
+#aboutUsPage .nav-item-active {
+  border-bottom: 3px solid #ffc533;
+}
+#aboutUsPage .firstImg img {
+  width: 100%;
+  height: 100vh;
+}
+#aboutUsPage .introduction {
+  background-color: #0058b7;
+  background-image: url("../fonts/logobg.png");
+  background-size: 115% 100%;
+  background-repeat: no-repeat;
+  background-position-y: 30%;
+}
+#aboutUsPage .introduction h2 {
+  text-align: center;
+  color: white;
+  font-size: 24px;
+  padding-bottom: 2em;
+}
+#aboutUsPage .introduction h3 {
+  color: white;
+  position: relative;
+  left: -4em;
+  top: -1em;
+  font-size: 1.5rem;
+}
+#aboutUsPage .introduction .col-lg-5 {
+  position: relative;
+}
+#aboutUsPage .introduction figure {
+  background-color: #68ace6;
+  position: relative;
+  height: 150px;
+  margin-top: 3rem;
+}
+#aboutUsPage .introduction figure img {
+  width: 15rem;
+  height: auto;
+  position: absolute;
+  transition: all 1s;
+  -moz-transition: all 1s;
+  -ms-transition: all 1s;
+  -o-transition: all 1s;
+  -webkit-transition: all 1s;
+}
+#aboutUsPage .introduction figure .img1 {
+  opacity: 0;
+  right: 110%;
+  top: -85%;
+}
+#aboutUsPage .introduction figure .img2 {
+  opacity: 0;
+  top: -5rem;
+  left: 110%;
+}
+#aboutUsPage .introduction .figureOne {
+  cursor: pointer;
+}
+#aboutUsPage .introduction .figureTwo {
+  cursor: pointer;
+  overflow: visible;
+}
+#aboutUsPage .introduction .business {
+  color: white;
+}
+#aboutUsPage .introduction .business .business-item {
+  font-size: 20px;
+  text-shadow: 1px 1px 5px #847a7a, 2px 2px 5px #847a7a, 3px 3px 5px #847a7a;
+  cursor: pointer;
+}
+#aboutUsPage .introduction .business .business-item p {
+  display: inline-block;
+  width: 10rem;
+  text-align: right;
+  color: white;
+}
+#aboutUsPage .introduction .business .business-item span {
+  display: inline-block;
+  height: 0.5em;
+  width: 3rem;
+  border-top: 3px solid white;
+  transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+}
+#aboutUsPage .introduction .business .business-item:hover span {
+  transform: translateX(2em);
+  -webkit-transform: translateX(2em);
+}
+.footer {
+  font-family: "微软雅黑";
+}
+.footer .phoneNumber {
+  display: inline-block;
+  height: 2rem;
+}
+.footer * {
+  white-space: nowrap;
+}
+.footer img {
+  max-width: 50%;
+}
+.footer .footer-item {
+  padding: 0.8em;
+}
+.footer .footer-item p {
+  display: inline;
+}
+.footer .footer-item span {
+  display: inline-block;
+  height: 0.5em;
+  width: 1.5rem;
+  border-top: 3px solid black;
+  margin-right: 0.5em;
+}
+.footer .footerContact div {
+  display: inline;
+}
+.p1,
+.p2 {
+  opacity: 0;
+  color: white;
+  width: 50%;
+  white-space: normal;
+  overflow: hidden;
+  text-indent: 2em;
+  word-wrap: break-word;
+  transition: all 1s;
+  -moz-transition: all 1s;
+  -ms-transition: all 1s;
+  -o-transition: all 1s;
+  -webkit-transition: all 1s;
+}
+.p1 {
+  transition-delay: 0.2s;
+  -webkit-transition-delay: 0.2s;
+}
+.p2 {
+  float: right;
+  width: 45%;
+  transition-delay: 0.4s;
+  -webkit-transition-delay: 0.4s;
+}
+@media (min-width: 720px) {
+  .mt-10 {
+    margin-top: 13rem;
+  }
+}
+@media (max-width: 720px) {
+  .mt-10 {
+    margin-top: 3rem;
+  }
+}
+@media (max-width: 974px) {
+  #aboutUsPage .introduction figure {
+    height: 100px;
+    margin-top: 2rem;
+  }
+  #aboutUsPage .introduction figure img {
+    width: 10rem;
+  }
+  #aboutUsPage .introduction figure .img2 {
+    top: -3rem;
+  }
+  #aboutUsPage .figureOne {
+    margin-right: 8em;
+  }
+  #aboutUsPage .figureTwo {
+    margin-left: 8em;
+  }
+}
+@media (max-width: 720px) {
+  #aboutUsPage .introduction {
+    background-image: none;
+  }
+  #aboutUsPage .introduction .p1,
+  #aboutUsPage .introduction .p2 {
+    font-size: 14px;
+    width: 80%;
+  }
+}
+.member {
+  text-align: center;
+  margin-top: 10rem;
+}
+.member .memberItem {
+  display: block;
+  width: 60%;
+  height: 300px;
+  background-color: #ffc533;
+}

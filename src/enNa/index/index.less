@@ -1,0 +1,260 @@
+// public
+.white{
+    color: #fff;
+}
+a{
+    color: #000;
+    &:hover{
+        color: #fff;
+        text-decoration: none;
+    }
+}
+.container-fluid{
+    padding: 0px;
+    min-width: 1166px;
+    margin: auto;
+    overflow: hidden;
+}
+.navbar{
+    min-width: 1166px;
+}
+.w-65{
+    width: 65%;
+}
+.row{
+    margin-left: 0px;
+    margin-right: 0px;
+}
+.my-bg{
+    background-color: #f8f9fa;
+}
+.explore{
+    position: relative;
+    .myBtn{
+        border-radius: 2rem;
+        font-weight: bold;
+        background-color: #ffc533;
+        &:focus{
+            box-shadow: 0 0 0 0rem rgba(0,123,255,.25);
+        }
+    }
+    .explore-content{
+        position: absolute;
+        width: 12rem;
+        left: -1em;
+        display: none;
+        .explore-title{
+            width: 2.5rem;
+            display: inline-block;
+            position: absolute;
+            background-color: #0058b7;
+            border-top-left-radius: 1rem;
+            border-bottom-left-radius: 1rem;
+            font-size: 14px;
+            color: white;
+            text-align: center;
+            .title-item{
+                padding: 1em 0em 1em 0em;
+                cursor: pointer;
+            }
+            .active{
+                background-color: #c5efffd4;
+                border-top-left-radius: 1rem;
+                border-bottom-left-radius: 1rem;
+            }
+        }
+        .explore-body{
+            width: 9.5rem;
+            display: inline-block;
+            margin-top: 1em;
+            margin-left: 2.5rem;
+            background-color: #0058b7;
+            color: white;
+            .content-item{
+                padding: 1em 1em 0.5em 0.5em;
+                border-bottom: 2px solid white;
+                font-size: 16px;
+                width: 80%;
+                margin: auto;
+                cursor: pointer;
+                &:hover{
+                    img{
+                        opacity: 1;
+                    }
+                }
+                img{
+                    display: inline-block;
+                    margin-top: 0.3em;
+                    opacity: 0;
+                    transition: 0.5s;
+                    float: right;
+                }
+
+            }
+        }
+    }
+    
+}
+#myInput {
+    width: auto;
+    
+    .form-control{
+        width: 26rem;
+        border-radius: 2rem;
+        border: 2px solid #ffc533;
+        &:focus{
+            box-shadow: 0 0 0 0 white;
+        }
+    }
+    img{
+        position: relative;
+        left: -38px;
+        z-index: 5;
+    }
+}
+
+// 第一视口
+.firstView{
+    height: 550px;
+    background-image: url('../../fonts/enNa.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.logIn{
+    height: 12rem;
+    width: 50%;
+    height: 22rem;
+    background-color: #e7f2f4;
+    span{
+        display: block;
+        height: 8rem;
+        background-color: #ecb365;
+        width: 8rem;
+        border-radius: 50% 50%;
+    }
+    .btn-shadow{
+        background-color: #82a8d7;
+        box-shadow: 2px 2px 2px #a29b9b;
+    }
+}
+.cooperation-shool{
+    .col-2{
+        padding: 2rem 0rem;
+    }
+    span{
+        display: block;
+        width: 60%;
+        padding: 0.5rem 1rem;
+        margin-right: auto;
+        margin-left: auto;
+        background-color: #f4a607;
+        border-radius: 3px;
+    }
+}
+
+// 优质解答
+.qualityAnswer{
+    max-width: 1200px;
+    overflow: hidden;
+}
+
+//合作企业
+.cooperation-enterprise{
+    span{
+        display: inline-block;
+
+        height: 6rem;
+        width: 6rem;
+        border-radius: 50%;
+        background-color: #ee9c16;
+    }
+    .negative-img{
+        img{
+            transform: rotateX(180deg);
+            -webkit-transform: rotateX(180deg);
+        }
+    }
+    .lookAll{
+        p{
+            display: inline-block;
+            width: 8rem;
+            border: 2px solid #ee9c16;
+            border-radius: 5px;
+        }
+    }
+}
+
+// 底栏
+.footer{
+    background-color: #0058b7;
+    color: white;
+    p{
+        padding: 0.5em 0em; 
+    }
+    ul{
+        list-style: none;
+        li{
+
+            padding: 0.5em 0em;
+        }
+    }
+    img{
+        display: inline-block;
+    }
+}
+
+// login
+.myLoginModal{
+    .modal-content{
+        min-width: 430px;
+    }
+    .tab-content{
+        .col-form-label{
+            text-align: right;
+            font-size: 18px;
+            padding-top: 0px;
+        }
+        .form-control{
+            border: 1px solid #9cc0e3;
+            border-radius: 1.5rem;
+            height: calc(1em + .75rem);
+            padding: 0rem .75rem;
+        }
+        .myBtn{
+            border-radius: 2rem;
+            font-size: 14px;
+            background-color: #ffc533;
+        }
+        .register{
+         
+            a{
+                color: black;
+                font-size: 1em;
+                &:first-child{
+                    text-decoration-line: underline;
+                }
+            }
+            
+        }
+    }
+    .modal-dialog {
+        max-width: 430px;
+    }
+    .nav-link {
+        padding: 0.5rem 1.8rem;
+        border-top-left-radius: .8rem;
+        border-top-right-radius: .8rem;
+        color: white;
+    }
+    .nav-tabs {
+        background-color: #ffc533;
+    }
+    .close {
+        position: absolute;
+        right: -2rem;
+        font-size: 2.5rem;
+        top: -2.5rem;
+        color: #ffc533;
+    }
+
+}

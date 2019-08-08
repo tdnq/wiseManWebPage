@@ -1,0 +1,291 @@
+.container-fluid {
+  padding: 0px;
+  max-width: 1366px;
+  min-width: 320px;
+  margin: auto;
+}
+.row {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+.icon {
+  width: 3em;
+  height: 3em;
+  vertical-align: -0.15em;
+  fill: currentColor;
+  overflow: hidden;
+  color: white;
+}
+#indexPage .firstView {
+  background-image: url('../fonts/index.jpg');
+  background-size: 100% 100%;
+  height: 100vh;
+}
+#indexPage .navbar img {
+  color: red;
+}
+#indexPage .navbar-brand {
+  padding-left: 2rem;
+}
+#indexPage .nav-item {
+  margin: 0.1em 1em;
+}
+#indexPage .nav-link {
+  color: white;
+  display: inline-block;
+  width: auto;
+  padding-bottom: 0px;
+}
+#indexPage .nav-item-active {
+  border-bottom: 3px solid #ffc533;
+}
+#indexPage .carousel-item img {
+  width: 100%;
+  max-height: 480px;
+}
+.ennaTitle h4 {
+  text-align: center;
+  font-weight: 600;
+}
+.ennaTitle span {
+  font-size: 35px;
+}
+.ennaTitle .ennaItem .my-badge {
+  position: absolute;
+  font-size: 15px;
+  color: white;
+  top: 0px;
+  left: 60px;
+  opacity: 0;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+}
+.ennaTitle .ennaItem span {
+  display: block;
+  background-size: 100% 100%;
+  width: 280px;
+  height: 220px;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  position: relative;
+  cursor: pointer;
+}
+.ennaTitle .ennaItem span:hover .text-introduction {
+  color: #383535;
+}
+.ennaTitle .ennaItem span:hover .roateTh {
+  transform: rotateY(180deg);
+  -ms-transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+}
+.ennaTitle .ennaItem span:hover .my-badge {
+  opacity: 0.9;
+}
+.ennaTitle .ennaItem span:hover .bigMirror {
+  -ms-transform: translateY(-4px);
+  -webkit-transform: translateY(-4px);
+}
+.ennaTitle .ennaItem span:hover .myp {
+  -ms-transform: translateY(-4.7em);
+  -webkit-transform: translateY(-4.7em);
+  transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+}
+.ennaTitle .ennaItem span img {
+  max-width: 200px;
+  position: relative;
+}
+.ennaTitle .ennaItem span figcaption {
+  position: relative;
+  font-size: 20px;
+  top: 68px;
+  left: 116px;
+}
+.ennaTitle .ennaItem .text-introduction {
+  font-size: 14px;
+  display: inline-block;
+  position: relative;
+  height: 60px;
+  color: #c6bdbd;
+}
+.ennaTitle .indexO .itemT {
+  top: -35px;
+}
+.ennaTitle .indexO figcaption {
+  top: 75px;
+  left: 95px;
+}
+.ennaTitle .indexO .text-introduction {
+  left: 50px;
+  top: -50px;
+}
+.ennaTitle .indexT .itemO {
+  top: -20px;
+}
+.ennaTitle .indexT .itemT {
+  top: -65px;
+}
+.ennaTitle .indexT figcaption {
+  top: 80px;
+  left: 100px;
+}
+.ennaTitle .indexT .text-introduction {
+  height: 60px;
+  left: 50px;
+  top: -80px;
+}
+.ennaTitle .indexTh .itemO {
+  top: -40px;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+}
+.ennaTitle .indexTh .itemT {
+  top: -87px;
+}
+.ennaTitle .indexTh figcaption {
+  top: 80px;
+  left: 100px;
+}
+.ennaTitle .indexTh .text-introduction {
+  top: -105px;
+  left: 50px;
+}
+.ennaTitle .indexF .itemO {
+  top: -10px;
+}
+.ennaTitle .indexF .itemT {
+  top: -52px;
+}
+.ennaTitle .indexF figcaption {
+  top: 80px;
+  left: 100px;
+}
+.ennaTitle .indexF .myp {
+  position: absolute;
+  width: 24%;
+  top: 4.5em;
+  background-color: #aec5e1ab;
+  text-align: center;
+  border: 1px solid #a7c1e100;
+  border-radius: 0.5em;
+  left: 3em;
+  font-size: 10px;
+  padding: 0.5em 0.2em 3em 0.5em;
+}
+.ennaTitle .indexF .text-introduction {
+  top: -67px;
+  left: 50px;
+}
+.moveText {
+  display: block;
+  width: 100%;
+  text-align: center;
+  color: white;
+  font-weight: 700;
+  background-color: #0058b7;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  max-width: 96px;
+}
+.moveText:hover .moveO,
+.moveText:hover .moveT {
+  left: 0px;
+}
+.moveText .moveO,
+.moveText .moveT {
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+}
+.moveText .moveO {
+  position: relative;
+  left: 10px;
+}
+.moveText .moveT {
+  position: relative;
+  left: -10px;
+}
+.my-list ul {
+  list-style-type: none;
+  min-width: 222px;
+  max-width: 240px;
+  text-align: center;
+}
+.my-list ul li {
+  font-weight: 600;
+  font-size: 22px;
+  position: relative;
+  height: 84px;
+  line-height: 1;
+}
+.my-list ul li:hover p {
+  transform: translateY(10px);
+}
+.my-list ul li:hover span {
+  transform: translateY(-10px);
+}
+.my-list ul li p {
+  border-bottom: 7px solid blue;
+  transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+}
+.my-list ul li span {
+  display: inline-block;
+  transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+}
+.my-list ul li span a {
+  text-decoration: none;
+  color: black;
+}
+.bigMirror {
+  left: -1em;
+  max-width: 20% !important;
+  transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  -webkit-transition: all 0.2s;
+  transition-delay: 0.2s;
+}
+.w-65 {
+  width: 65%;
+}
+.footer {
+  background-color: #0058b7;
+  color: white;
+}
+.footer .phoneNumber {
+  display: inline-block;
+  height: 2rem;
+}
+.footer * {
+  white-space: nowrap;
+}
+.footer img {
+  max-width: 50%;
+}
+.footer .footer-item {
+  padding: 0.8em;
+}
+.footer .footer-item p {
+  display: inline;
+}
+.footer .footer-item span {
+  display: inline-block;
+  height: 0.5em;
+  width: 1.5rem;
+  border-top: 3px solid white;
+  margin-right: 0.5em;
+}
+.footer .footerContact div {
+  display: inline;
+}

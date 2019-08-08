@@ -1,0 +1,21 @@
+.shool-introduction {
+  margin-top: 84px;
+}
+.course {
+  margin-top: 2rem;
+}
+.course .course-title {
+  border-bottom: 2px solid  #5aa5ff;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+.course .course-all .course-content .course-img {
+  background-color: #ffc533;
+  height: 10rem;
+}
+.course .course-all .course-content .course-info {
+  background-color: #f9f9f9;
+}
+.course .course-all .course-content .course-info p {
+  margin-bottom: 0.2em;
+}

@@ -1,0 +1,132 @@
+.white{
+  color: white;
+}
+.container-fluid {
+  padding: 0px;
+  min-width: 1166px;
+  margin: auto;
+  overflow: hidden;
+}
+.navbar {
+  min-width: 1166px;
+}
+.w-85 {
+  width: 85%;
+}
+.row {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+.explore-body a{
+  color: white;
+}
+.explore-body a:hover{
+    text-decoration: none;
+    color: white;
+
+}
+.explore-body .lookAll a:hover{
+  color: rgb(111, 153, 151);
+}
+/* 顶栏 */
+.my-bg {
+  background-color: #0058b7;
+}
+.form-control:focus {
+  box-shadow: 0 0 0 0 white;
+}
+.explore {
+  position: relative;
+}
+.explore .myBtn {
+  border-radius: 2rem;
+  font-weight: bold;
+  background-color: #ffc533;
+}
+.explore .myBtn:focus {
+  box-shadow: 0 0 0 0rem rgba(0, 123, 255, 0.25);
+}
+.explore .explore-content {
+  position: absolute;
+  width: 12rem;
+  left: -1em;
+  display: none;
+}
+.explore .explore-content .explore-title {
+  width: 2.5rem;
+  display: inline-block;
+  position: absolute;
+  background-color: #0058b7;
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+  font-size: 14px;
+  color: white;
+  text-align: center;
+}
+.explore .explore-content .explore-title .title-item {
+  padding: 1em 0em 1em 0em;
+  cursor: pointer;
+}
+.explore .explore-content .explore-title .active {
+  background-color: #c5efffd4;
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+}
+.explore .explore-content .explore-body {
+  width: 9.5rem;
+  display: inline-block;
+  margin-top: 1em;
+  margin-left: 2.5rem;
+  background-color: #0058b7;
+  color: white;
+}
+.explore .explore-content .explore-body .content-item {
+  padding: 1em 1em 0.5em 0.5em;
+  border-bottom: 2px solid white;
+  font-size: 16px;
+  width: 80%;
+  margin: auto;
+  cursor: pointer;
+}
+.explore .explore-content .explore-body .content-item:hover img {
+  opacity: 1;
+}
+.explore .explore-content .explore-body .content-item img {
+  display: inline-block;
+  margin-top: 0.3em;
+  opacity: 0;
+  transition: 0.5s;
+  float: right;
+}
+#myInput {
+  width: auto;
+}
+#myInput .form-control {
+  width: 30rem;
+  border-radius: 2rem;
+  border: 2px solid #ffc533;
+}
+#myInput img {
+  position: relative;
+  left: -38px;
+  z-index: 5;
+}
+
+
+/* 底栏 */
+.footer {
+    background-color: #0058b7;
+    color: white;
+  }
+  .footer p {
+    padding: 0.5em 0em;
+  }
+  .footer ul {
+    list-style: none;
+  }
+  .footer ul li {
+    padding: 0.5em 0em;
+  }
+  .footer img {
+    display: inline-block;
+  }

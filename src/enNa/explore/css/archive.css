@@ -1,0 +1,44 @@
+.subject-info {
+  padding-top: 9rem;
+  padding-bottom: 8rem;
+  background-image: url('../../fonts/bg.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.subject-info .avatar-content {
+  width: 8rem;
+  height: 8rem;
+  border-radius: 50%;
+  border: 1px solid white;
+  background-color: #fff;
+  margin: auto;
+}
+.subject-info .course,
+.subject-info .shool-amount {
+  margin-top: 1rem;
+}
+.subject-info .course .title,
+.subject-info .shool-amount .title {
+  color: white;
+  font-size: 18px;
+  position: relative;
+  vertical-align: top;
+}
+.subject-info .course .title .amount,
+.subject-info .shool-amount .title .amount {
+  position: absolute;
+  white-space: nowrap;
+  top: 1.5em;
+  right: 0em;
+}
+.subject-info .borderRightWhite {
+  border-right: 2px solid white;
+}
+.subject-info .enNaMemberr button {
+  border: 1px solid white;
+  border-radius: 2rem;
+  background-color: white;
+}
+.subject-info .enNaMemberr button a {
+  color: #5aa5ff;
+}

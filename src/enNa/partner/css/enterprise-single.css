@@ -1,0 +1,15 @@
+.kind-title {
+  border-bottom: 2px solid  #5aa5ff;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+.enterprise-info {
+  color: white;
+  margin-top: 74px;
+  padding-top: 8rem;
+  background-color: #0058b7;
+}
+.enterprise-info .enterprise-img {
+  height: 6rem;
+  background-color: white;
+}

@@ -1,0 +1,107 @@
+@yellow: #ffc533;
+@blue: #0058b7;
+@shadowColor: #9ba2a5;
+@skyBlue: #5aa5ff;
+.edit-img{
+    padding: 0.3rem;
+    cursor: pointer;
+    &:hover{
+        box-shadow: 0px 0px 2px rgb(118, 102, 207);
+    }
+}
+.ml-25{
+    margin-left: 20%;
+}
+.teacher-content{
+    margin-top: 74px;
+    .teacher-info{
+
+        color: white;
+    }
+    .tab-control{
+        background-color: @blue;
+        a{
+            color: white;
+        }
+    }
+    .tab-content{
+
+        .tab-title{
+            position: relative;
+            top: 0.5em;
+        }
+    }
+    .nav-pills .nav-link.active{
+        color: #fff;
+        background-color: @blue;
+        border: 1px solid @yellow;
+    }
+}
+//问答
+#v-pills-messages{
+    .chat-window{
+        background-color: #f9f9f9;
+    }
+    .qa-font{
+        position: absolute;
+        display: inline-block;
+        width: 3rem;
+        border-bottom-right-radius: 50%;
+        border-bottom-right-radius: 100%;
+        height: 3rem;
+        background-color:  #ffeab3;
+        img{
+            position: absolute;
+            top: 0.3rem;
+            left: 0.3rem;
+        }
+
+    }
+    .teacher{
+        .avatar-content{
+            width: 4rem;
+            height: 4rem;
+            border-radius: 50%;
+            background-color: #5aa5ff;
+        }
+        .answer-content{
+            padding: 1em 2em;
+            border: 2px solid #5aa5ff;
+            border-radius: 2rem;
+        }
+    }
+    .diolog{
+        .form-control{
+
+            border-radius: 2rem;
+        }
+        .send-button{
+            border-radius: 2rem;
+            background-color: #5aa5ff;
+            color: white;
+            font-size: 14px;
+        }
+    }
+}
+
+// 课程部分
+// .single-course{
+//     background-color: #f9f9f9;
+//     .course-title{
+//         .course-img{
+    
+//             width: 100%;
+//             height: 6rem;
+//             background-color: #ffc533;
+//         }
+//         .title{
+//             background-color: #0058b7;
+//             color: white;
+//         }
+//     }
+    
+//     .edit-course{
+//         border: 2px solid @skyBlue;
+//         border-radius: 2rem;
+//     }
+// }

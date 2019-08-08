@@ -1,0 +1,225 @@
+.white {
+  color: #fff;
+}
+a {
+  color: #000;
+}
+a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+.container-fluid {
+  padding: 0px;
+  min-width: 1166px;
+  margin: auto;
+  overflow: hidden;
+}
+.navbar {
+  min-width: 1166px;
+}
+.w-65 {
+  width: 65%;
+}
+.row {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+.my-bg {
+  background-color: #f8f9fa;
+}
+.explore {
+  position: relative;
+}
+.explore .myBtn {
+  border-radius: 2rem;
+  font-weight: bold;
+  background-color: #ffc533;
+}
+.explore .myBtn:focus {
+  box-shadow: 0 0 0 0rem rgba(0, 123, 255, 0.25);
+}
+.explore .explore-content {
+  position: absolute;
+  width: 12rem;
+  left: -1em;
+  display: none;
+}
+.explore .explore-content .explore-title {
+  width: 2.5rem;
+  display: inline-block;
+  position: absolute;
+  background-color: #0058b7;
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+  font-size: 14px;
+  color: white;
+  text-align: center;
+}
+.explore .explore-content .explore-title .title-item {
+  padding: 1em 0em 1em 0em;
+  cursor: pointer;
+}
+.explore .explore-content .explore-title .active {
+  background-color: #c5efffd4;
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+}
+.explore .explore-content .explore-body {
+  width: 9.5rem;
+  display: inline-block;
+  margin-top: 1em;
+  margin-left: 2.5rem;
+  background-color: #0058b7;
+  color: white;
+}
+.explore .explore-content .explore-body .content-item {
+  padding: 1em 1em 0.5em 0.5em;
+  border-bottom: 2px solid white;
+  font-size: 16px;
+  width: 80%;
+  margin: auto;
+  cursor: pointer;
+}
+.explore .explore-content .explore-body .content-item:hover img {
+  opacity: 1;
+}
+.explore .explore-content .explore-body .content-item img {
+  display: inline-block;
+  margin-top: 0.3em;
+  opacity: 0;
+  transition: 0.5s;
+  float: right;
+}
+#myInput {
+  width: auto;
+}
+#myInput .form-control {
+  width: 26rem;
+  border-radius: 2rem;
+  border: 2px solid #ffc533;
+}
+#myInput .form-control:focus {
+  box-shadow: 0 0 0 0 white;
+}
+#myInput img {
+  position: relative;
+  left: -38px;
+  z-index: 5;
+}
+.firstView {
+  height: 550px;
+  background-image: url('../../fonts/enNa.jpg');
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.logIn {
+  height: 12rem;
+  width: 50%;
+  height: 22rem;
+  background-color: #e7f2f4;
+}
+.logIn span {
+  display: block;
+  height: 8rem;
+  background-color: #ecb365;
+  width: 8rem;
+  border-radius: 50% 50%;
+}
+.logIn .btn-shadow {
+  background-color: #82a8d7;
+  box-shadow: 2px 2px 2px #a29b9b;
+}
+.cooperation-shool .col-2 {
+  padding: 2rem 0rem;
+}
+.cooperation-shool span {
+  display: block;
+  width: 60%;
+  padding: 0.5rem 1rem;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: #f4a607;
+  border-radius: 3px;
+}
+.qualityAnswer {
+  max-width: 1200px;
+  overflow: hidden;
+}
+.cooperation-enterprise span {
+  display: inline-block;
+  height: 6rem;
+  width: 6rem;
+  border-radius: 50%;
+  background-color: #ee9c16;
+}
+.cooperation-enterprise .negative-img img {
+  transform: rotateX(180deg);
+  -webkit-transform: rotateX(180deg);
+}
+.cooperation-enterprise .lookAll p {
+  display: inline-block;
+  width: 8rem;
+  border: 2px solid #ee9c16;
+  border-radius: 5px;
+}
+.footer {
+  background-color: #0058b7;
+  color: white;
+}
+.footer p {
+  padding: 0.5em 0em;
+}
+.footer ul {
+  list-style: none;
+}
+.footer ul li {
+  padding: 0.5em 0em;
+}
+.footer img {
+  display: inline-block;
+}
+.myLoginModal .modal-content {
+  min-width: 430px;
+}
+.myLoginModal .tab-content .col-form-label {
+  text-align: right;
+  font-size: 18px;
+  padding-top: 0px;
+}
+.myLoginModal .tab-content .form-control {
+  border: 1px solid #9cc0e3;
+  border-radius: 1.5rem;
+  height: calc(1.75em);
+  padding: 0rem .75rem;
+}
+.myLoginModal .tab-content .myBtn {
+  border-radius: 2rem;
+  font-size: 14px;
+  background-color: #ffc533;
+}
+.myLoginModal .tab-content .register a {
+  color: black;
+  font-size: 1em;
+}
+.myLoginModal .tab-content .register a:first-child {
+  text-decoration-line: underline;
+}
+.myLoginModal .modal-dialog {
+  max-width: 430px;
+}
+.myLoginModal .nav-link {
+  padding: 0.5rem 1.8rem;
+  border-top-left-radius: .8rem;
+  border-top-right-radius: .8rem;
+  color: white;
+}
+.myLoginModal .nav-tabs {
+  background-color: #ffc533;
+}
+.myLoginModal .close {
+  position: absolute;
+  right: -2rem;
+  font-size: 2.5rem;
+  top: -2.5rem;
+  color: #ffc533;
+}

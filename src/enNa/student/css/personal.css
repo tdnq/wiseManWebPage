@@ -1,0 +1,285 @@
+.xyMiddle {
+  margin-top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+}
+.overHidden {
+  overflow: hidden;
+}
+.container-fluid {
+  padding: 0px;
+  min-width: 1266px;
+  margin: auto;
+  overflow: hidden;
+}
+.navbar {
+  min-width: 1266px;
+}
+.w-85 {
+  width: 85%;
+}
+.row {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+.my-bg {
+  background-color: #0058b7;
+}
+.form-control:focus {
+  box-shadow: 0 0 0 0 white;
+}
+.explore {
+  position: relative;
+}
+.explore .myBtn {
+  border-radius: 2rem;
+  font-weight: bold;
+  background-color: #ffc533;
+}
+.explore .myBtn:focus {
+  box-shadow: 0 0 0 0rem rgba(0, 123, 255, 0.25);
+}
+.explore .explore-content {
+  position: absolute;
+  width: 12rem;
+  left: -1em;
+  display: none;
+}
+.explore .explore-content .explore-title {
+  width: 2.5rem;
+  display: inline-block;
+  position: absolute;
+  background-color: #0058b7;
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+  font-size: 14px;
+  color: white;
+  text-align: center;
+}
+.explore .explore-content .explore-title .title-item {
+  padding: 1em 0em 1em 0em;
+  cursor: pointer;
+}
+.explore .explore-content .explore-title .active {
+  background-color: #c5efffd4;
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+}
+.explore .explore-content .explore-body {
+  width: 9.5rem;
+  display: inline-block;
+  margin-top: 1em;
+  margin-left: 2.5rem;
+  background-color: #0058b7;
+  color: white;
+}
+.explore .explore-content .explore-body .content-item {
+  padding: 1em 1em 0.5em 0.5em;
+  border-bottom: 2px solid white;
+  font-size: 16px;
+  width: 80%;
+  margin: auto;
+  cursor: pointer;
+}
+.explore .explore-content .explore-body .content-item:hover img {
+  opacity: 1;
+}
+.explore .explore-content .explore-body .content-item img {
+  display: inline-block;
+  margin-top: 0.3em;
+  opacity: 0;
+  transition: 0.5s;
+  float: right;
+}
+#myInput {
+  width: auto;
+}
+#myInput .form-control {
+  width: 30rem;
+  border-radius: 2rem;
+  border: 2px solid #ffc533;
+}
+#myInput img {
+  position: relative;
+  left: -38px;
+  z-index: 5;
+}
+.personal-info {
+  padding-top: 9rem;
+  padding-bottom: 8rem;
+  background-image: url('../../fonts/bg.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.personal-info .avatar-content {
+  width: 8rem;
+  height: 8rem;
+  border-radius: 50%;
+  border: 1px solid white;
+  background-color: #fff;
+  margin: auto;
+}
+.personal-info .edit-img {
+  position: relative;
+  top: -1rem;
+  left: 1rem;
+  padding: 0.1rem 0.2rem;
+  cursor: pointer;
+}
+.personal-info .edit-img:hover {
+  box-shadow: 0px 0px 2px #7666cf;
+}
+.personal-info .course,
+.personal-info .intergral {
+  margin-top: 2rem;
+}
+.personal-info .course .title,
+.personal-info .intergral .title {
+  color: white;
+  font-size: 18px;
+  position: relative;
+  vertical-align: top;
+}
+.personal-info .course .title .amount,
+.personal-info .intergral .title .amount {
+  position: absolute;
+  white-space: nowrap;
+  top: 1.5em;
+  right: 0em;
+}
+.personal-info .borderRightWhite {
+  border-right: 2px solid white;
+}
+.personal-info .enNaMemberr button {
+  border: 1px solid white;
+  border-radius: 2rem;
+  background-color: white;
+}
+.personal-info .enNaMemberr button a {
+  color: #5aa5ff;
+}
+.studentFunction .tab-content {
+  background-color: #f9f9f9;
+}
+.studentFunction nav {
+  z-index: 2;
+  width: 70%;
+  border: 1px solid #5aa5ff;
+  border-radius: 2rem;
+  background-color: #5aa5ff;
+  padding-bottom: 1px;
+}
+.studentFunction nav a {
+  color: white;
+}
+.studentFunction nav a:hover {
+  color: #0058b7;
+}
+.studentFunction nav .active {
+  color: #495057;
+  background-color: #fff;
+  border-color: #dee2e6 #dee2e6 #b3e9ee;
+  border-radius: 2rem;
+  padding: 0.5em 2em;
+}
+.studentFunction .segmentation {
+  margin-top: -2.2rem;
+  margin-left: 60%;
+}
+.studentFunction .course-title .course-img {
+  width: 100%;
+  height: 6rem;
+  background-color: #ffc533;
+}
+.studentFunction .course-title .title {
+  background-color: #0058b7;
+  color: white;
+}
+.studentFunction .progress {
+  height: 0.5rem;
+}
+.studentFunction .start-learn {
+  border: 2px solid #ffc533;
+  border-radius: 2rem;
+}
+.studentFunction .punch {
+  color: white;
+  font-size: 1.2em;
+  vertical-align: middle;
+  box-shadow: 5px 5px 2px #0058b7;
+  width: 12rem;
+}
+.studentFunction .punch .punch-title {
+  background-color: #0058b7;
+  height: 3rem;
+  line-height: 3rem;
+}
+.studentFunction .punch .punch-body {
+  color: black;
+  height: 8rem;
+  font-size: 1.5em;
+  line-height: 8rem;
+}
+.studentFunction .punch .punch-footer {
+  line-height: 3rem;
+  background-color: #ffc533;
+  height: 3rem;
+}
+#nav-message .qa-font {
+  position: absolute;
+  display: inline-block;
+  top: -1rem;
+  left: -0.5rem;
+  width: 3rem;
+  border-bottom-right-radius: 50%;
+  border-bottom-right-radius: 100%;
+  height: 3rem;
+  background-color: #ffeab3;
+}
+#nav-message .qa-font img {
+  position: absolute;
+  top: 0.3rem;
+  left: 0.3rem;
+}
+#nav-message .teacher .avatar-content {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  background-color: #5aa5ff;
+}
+#nav-message .teacher .answer-content {
+  padding: 1em 2em;
+  border: 2px solid #5aa5ff;
+  border-radius: 2rem;
+}
+#nav-message .diolog .form-control {
+  border-radius: 2rem;
+}
+#nav-message .diolog .send-button {
+  border-radius: 2rem;
+  background-color: #5aa5ff;
+  color: white;
+  font-size: 14px;
+}
+.opacity-zero {
+  opacity: 0;
+}
+#nav-resume label {
+  font-weight: 600;
+  margin-right: 1rem;
+}
+#nav-resume .form-control {
+  display: inline-block;
+  border-radius: 2rem;
+  height: 1.6rem;
+  border-color: #5aa5ff;
+}
+#nav-resume .col-6 label {
+  width: 5em;
+}
+#nav-resume .col-6 .form-control {
+  width: calc(100% - 6em - 1rem);
+}
+#nav-resume .col-12 .form-control {
+  margin-left: 5.5rem;
+}

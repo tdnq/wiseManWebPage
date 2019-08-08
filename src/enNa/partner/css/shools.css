@@ -1,0 +1,42 @@
+.shools-info {
+  padding-top: 9rem;
+  padding-bottom: 8rem;
+  background-image: url('../../fonts/bg.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.shools-info .course,
+.shools-info .shool-amount {
+  margin-top: 1rem;
+}
+.shools-info .course .title,
+.shools-info .shool-amount .title {
+  color: white;
+  font-size: 18px;
+  position: relative;
+  vertical-align: top;
+}
+.shools-info .course .title .amount,
+.shools-info .shool-amount .title .amount {
+  position: absolute;
+  white-space: nowrap;
+  top: 1.5em;
+  right: 0em;
+}
+.shools-info .borderRightWhite {
+  border-right: 2px solid white;
+}
+.shools-info .partner {
+  color: white;
+  font-weight: bold;
+  white-space: nowrap;
+}
+.course .kind-title {
+  border-bottom: 2px solid  #5aa5ff;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+.course .course-content {
+  height: 12rem;
+  background-color: #cebdbd;
+}

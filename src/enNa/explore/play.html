@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../../iframe/bootstrap.min.css">
+    <link rel="stylesheet" href="../public/index.css">
+    <link rel="stylesheet" href="./css/play.css" type='text/css'>
+    <title>具体课程</title>
+</head>
+
+<body>
+<div class="container-fluid position-relative">
+        <!-- topBar -->
+        <nav class="navbar navbar-light fixed-top my-bg pt-3">
+            <a class="navbar-brand" href="../../index.html">
+                <img src="../fonts/enNaLogo.png" width="40" height="40" alt="logo">
+            </a>
+            <div class="explore mx-5">
+                <button type="button" id="explore-botton" class="btn myBtn px-4 py-1">探索</button>
+                <div class="explore-content">
+                    <div class="explore-title">
+                        <div class="title-item" id="title-course">课<br />程</div>
+                        <div class="title-item active" id="title-other">其<br />它</div>
+                    </div>
+                    <div class="explore-body pb-5">
+                        <div class="body-item d-none" id="item-course">
+                                <div class="content-item"><a href="#" class="white">分类1</a><img src="../fonts/arrow.png" width="20em" alt="arrow"></div>
+                                <div class="content-item"><a href="#" class="white">分类2</a><img src="../fonts/arrow.png" width="20em" alt="arrow"></div>
+                                <div class="content-item"><a href="#" class="white">分类3</a><img src="../fonts/arrow.png" width="20em" alt="arrow"></div>
+                            <div class="lookAll text-center mt-5">
+                                <p><a href="#">查看全部</a></p>
+                            </div>
+                        </div>
+                        <div class="body-item" id="item-other">
+                            <div class="content-item">学术交流 <img src="../fonts/arrow.png" width="20em" alt="arrow">
+                            </div>
+                            <div class="content-item">前沿资讯 <img src="../fonts/arrow.png" width="20em" alt="arrow">
+                            </div>
+                            <div class="content-item">企业实习 <img src="../fonts/arrow.png" width="20em" alt="arrow">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="input-group ml-5 pl-5 mt-1 mr-auto" id="myInput">
+                <input type="text" class="form-control" placeholder="">
+                <img src="../fonts/search.png" alt="search" width="38" class="">
+            </a>
+            <span class="mr-5">
+                <img src="../fonts/user.png" width="38" alt="user">
+                <p class="d-inline"></p>
+            </span>
+        </nav>
+        <!-- 侧边栏 -->
+        <div class="left-sider" id="sider-control">
+            <span class="toggle-maker pl-2 pt-2" id="toggle-control">
+                <img src="../fonts/longLine.png" alt="long">
+                <img src="../fonts/shortLine.png" class="shortLine" alt="low">
+            </span>
+            <div class="sider-teacher-info pl-2 mt-2">
+                <span class="avator mr-2">
+
+                </span>
+                <span class="name">
+                    name
+                </span>
+            </div>
+            <div class="unit-info mt-2">
+                <p class="pl-1">第一单元</p>
+                <div class="w-75 mx-auto">
+                    <div class="unit-img">
+
+                    </div>
+                    <span><img src="../fonts/download.png" alt="download"><a href="">下载资料</a> </span>
+                    <span class="float-right"><img src="../fonts/upload.png" alt="upload"><a href="">上传笔记</a> </span>
+                </div>
+            </div>
+            <div class="unit-info mt-2">
+                <p class="pl-1">第二单元</p>
+                <div class="w-75 mx-auto">
+                    <div class="unit-img">
+
+                    </div>
+                    <span><img src="../fonts/download.png" alt="download"><a href="">下载资料</a> </span>
+                    <span class="float-right"><img src="../fonts/upload.png" alt="upload"><a href="">上传笔记</a> </span>
+                </div>
+            </div>
+        </div>
+       <!-- 内容 -->
+        <div class="play">
+            <div class="row w-75 mx-auto">
+                <div class="col-1 offset-1 d-flex">
+                    <div class="left-slide my-auto mx-auto">
+                        <img src="../fonts/changeLRWhite.png" class="line" alt="line">
+                        <img src="../fonts/cricleWhite.png" class="circle" alt="circle">
+                    </div>
+                </div>
+                <div class="col-8">
+                    <div class="play-content">
+
+                    </div>
+                </div>
+                <div class="col-1 d-flex">
+                    <div class="right-slide my-auto mx-auto">
+                            <img src="../fonts/changeLRWhite.png" class="line" alt="line">
+                            <img src="../fonts/cricleWhite.png" class="circle" alt="circle">
+                        </div>
+                </div>
+                <div class="col-1 offset-2 mt-5">
+                    <img src="../fonts//QAhover.png" alt="qa" width="50">
+                </div>
+
+                <div class="col-5 d-flex mt-5">
+                    <input type="text" class="form-control my-auto" />
+                </div>
+                <div class="col-3 d-flex text-right mt-5">
+                    <button class="btn btn-send px-4 py-0 my-auto">发送</button>
+                </div>
+            </div>
+        </div>
+        <!-- 底栏 -->
+        <div class="footer py-5">
+                <div class="row w-75 mx-auto">
+                    <div class="col-2"><img src="../fonts/bottomLogo.png" alt="logo"></div>
+                    <div class="col-2">
+                        <ul class="footer-ul">
+                            <li>学生版</li>
+                            <li>教师版</li>
+                            <li>企业版</li>
+                        </ul>
+                    </div>
+                    <div class="col-2">
+                        <ul class="footer-ul">
+                            <li>全部课程</li>
+                            <li>前沿资讯</li>
+                            <li>合作高校</li>
+                            <li>合作企业</li>
+                        </ul>
+                    </div>
+                    <div class="col-2 text-center">
+                        <p>关于我们</p>
+                        <img src="../fonts/bottomSR.png" alt="shengren" width="50">
+                    </div>
+                    <div class="col-2 text-center">
+                        <p>关注我们</p>
+                        <img src="../fonts/weixin.png" alt="shengren" width="50">
+                    </div>
+                    <div class="col-2">
+                        <ul class="footer-ul">
+                            <li>手机端下载</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <script src="../../iframe/jquery.min.js"></script>
+    <script src="../../iframe//bootstrap.bundle.min.js"></script>
+    <script src="../public/index.js"></script>
+    <script src="./js/play.js"></script>
+</body>
+
+</html>
