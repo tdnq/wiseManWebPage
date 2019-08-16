@@ -1,0 +1,39 @@
+.kind-title {
+  border-bottom: 2px solid  #5aa5ff;
+  font-size: 1.1em;
+  font-weight: bold;
+}
+.bg-sm-light {
+  background-color: #f9f9f9;
+}
+.fw-bold {
+  font-weight: bold;
+}
+.main-content {
+  margin-top: 74px;
+  min-height: calc(100vh - 74px);
+}
+.main-content .submit-resume {
+  background-color: #ffc533;
+}
+.main-content .submit-resume .need-amount {
+  border-right: 1px solid black;
+}
+.main-content .submit-resume .btn-skyblue {
+  background-color: #5aa5ff;
+  border-radius: 2rem;
+  color: white;
+}
+.single-related {
+  font-size: 0.95rem;
+  border-bottom: 2px solid #5aa5ff;
+  white-space: nowrap;
+}
+.single-related .practice-title {
+  font-size: 1.1em;
+  font-weight: bold;
+}
+.single-related .practice-salary {
+  font-weight: bold;
+  vertical-align: middle;
+}

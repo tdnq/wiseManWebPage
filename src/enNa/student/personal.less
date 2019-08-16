@@ -32,73 +32,7 @@
         box-shadow: 0 0 0 0 white;
     }
 }
-.explore{
-    position: relative;
-    .myBtn{
-        border-radius: 2rem;
-        font-weight: bold;
-        background-color: #ffc533;
-        &:focus{
-            box-shadow: 0 0 0 0rem rgba(0,123,255,.25);
-        }
-    }
-    .explore-content{
-        position: absolute;
-        width: 12rem;
-        left: -1em;
-        display: none;
-        .explore-title{
-            width: 2.5rem;
-            display: inline-block;
-            position: absolute;
-            background-color: #0058b7;
-            border-top-left-radius: 1rem;
-            border-bottom-left-radius: 1rem;
-            font-size: 14px;
-            color: white;
-            text-align: center;
-            .title-item{
-                padding: 1em 0em 1em 0em;
-                cursor: pointer;
-            }
-            .active{
-                background-color: #c5efffd4;
-                border-top-left-radius: 1rem;
-                border-bottom-left-radius: 1rem;
-            }
-        }
-        .explore-body{
-            width: 9.5rem;
-            display: inline-block;
-            margin-top: 1em;
-            margin-left: 2.5rem;
-            background-color: #0058b7;
-            color: white;
-            .content-item{
-                padding: 1em 1em 0.5em 0.5em;
-                border-bottom: 2px solid white;
-                font-size: 16px;
-                width: 80%;
-                margin: auto;
-                cursor: pointer;
-                &:hover{
-                    img{
-                        opacity: 1;
-                    }
-                }
-                img{
-                    display: inline-block;
-                    margin-top: 0.3em;
-                    opacity: 0;
-                    transition: 0.5s;
-                    float: right;
-                }
 
-            }
-        }
-    }
-    
-}
 #myInput {
     width: auto;
     
@@ -178,7 +112,7 @@
     }
     nav{
         z-index: 2;
-        width: 70%;
+        width: 60%;
         border:  1px solid #5aa5ff;
         border-radius: 2rem;
         background-color: #5aa5ff;
@@ -265,6 +199,15 @@
         }
 
     }
+    .message-title{
+        img{
+            cursor: pointer;
+            padding: 0.2em;
+            &:hover{
+                box-shadow: 0px 0px 2px #555151;
+            }
+        }
+    }
     .teacher{
         .avatar-content{
             width: 4rem;
@@ -316,9 +259,75 @@
         }
     }
     .col-12{
+        img{
+            cursor: pointer;
+        }
         .form-control{
 
             margin-left: 5.5rem;
         }
     }
+}
+.test-warn{
+    .modal-content{
+        border: 5px solid #ffc533;
+        border-radius: 1rem;
+        h4{
+            color: #ffc533;
+        }
+        ul{
+            text-align: left;
+        }
+    }
+
+}
+
+// 学术问答
+.single-question .question-footer{
+    text-align: right;
+        button:hover {
+        color: #0058b7;
+    }
+}
+//前沿资讯
+.news{
+    margin-bottom: 2rem;
+    .news-title{
+        border-bottom: 2px solid  #5aa5ff;
+        font-size: 1.2em;
+        font-weight: bold;
+    }
+    .news-all{
+        .news-content{
+            padding: 1rem 0rem;
+            .news-img{
+                background-color: #ffc533;
+                height: 5rem;
+            }
+            .news-info{
+                background-color: #cec7c7;
+                p{
+                    margin-bottom: 0.2em;
+                    
+                }
+            }
+        }
+    }
+}
+
+// 实习信息
+.single-practice{
+    margin-top: 2rem;
+    // border-bottom:1px solid #5aa5ff;
+}
+.kind-title{
+    border-bottom: 2px solid  #5aa5ff;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+// 模态边框
+.modal-content{
+    border: 5px solid #ffc533;
+    border-radius: 1rem;
 }

@@ -23,6 +23,7 @@
         a{
             color: white;
         }
+        max-height: 350px;
     }
     .tab-content{
 
@@ -39,12 +40,10 @@
 }
 //问答
 #v-pills-messages{
-    .chat-window{
-        background-color: #f9f9f9;
-    }
     .qa-font{
         position: absolute;
         display: inline-block;
+        left: 0rem;
         width: 3rem;
         border-bottom-right-radius: 50%;
         border-bottom-right-radius: 100%;
@@ -57,17 +56,30 @@
         }
 
     }
-    .teacher{
-        .avatar-content{
-            width: 4rem;
-            height: 4rem;
-            border-radius: 50%;
-            background-color: #5aa5ff;
+    .message-title{
+        background-color: #f9f9f9;
+        img{
+            cursor: pointer;
+            padding: 0.2em;
+            &:hover{
+                box-shadow: 0px 0px 2px #555151;
+            }
         }
-        .answer-content{
-            padding: 1em 2em;
-            border: 2px solid #5aa5ff;
-            border-radius: 2rem;
+    }
+    .message-content{
+        background-color: #f9f9f9;
+        .teacher,.student{
+            .avatar-content{
+                width: 4rem;
+                height: 4rem;
+                border-radius: 50%;
+                background-color: #5aa5ff;
+            }
+            .answer-content{
+                padding: 1em 2em;
+                border: 2px solid #5aa5ff;
+                border-radius: 2rem;
+            }
         }
     }
     .diolog{
@@ -100,8 +112,36 @@
         }
     }
     
-    .edit-course{
+    .btn-edit-course{
         border: 2px solid @skyBlue;
         border-radius: 2rem;
+    }
+}
+
+//编辑课程
+.opacity-zero{
+    opacity: 0;
+}
+.edit-course{
+    background-color: #f9f9f9;
+    label{
+        display: inline;
+        vertical-align: top;
+    }
+    input{
+        display: inline-block;
+        margin-left: 2rem;
+        border-radius: 2rem;
+        height: 1.6rem;
+        border:1px solid @skyBlue;
+    }
+    textarea{
+        display: inline-block;
+        margin-left: 2rem;
+        border:1px solid @skyBlue;
+    }
+    img{
+        margin-left: 2rem;
+        cursor: pointer;
     }
 }

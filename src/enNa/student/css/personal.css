@@ -28,69 +28,6 @@
 .form-control:focus {
   box-shadow: 0 0 0 0 white;
 }
-.explore {
-  position: relative;
-}
-.explore .myBtn {
-  border-radius: 2rem;
-  font-weight: bold;
-  background-color: #ffc533;
-}
-.explore .myBtn:focus {
-  box-shadow: 0 0 0 0rem rgba(0, 123, 255, 0.25);
-}
-.explore .explore-content {
-  position: absolute;
-  width: 12rem;
-  left: -1em;
-  display: none;
-}
-.explore .explore-content .explore-title {
-  width: 2.5rem;
-  display: inline-block;
-  position: absolute;
-  background-color: #0058b7;
-  border-top-left-radius: 1rem;
-  border-bottom-left-radius: 1rem;
-  font-size: 14px;
-  color: white;
-  text-align: center;
-}
-.explore .explore-content .explore-title .title-item {
-  padding: 1em 0em 1em 0em;
-  cursor: pointer;
-}
-.explore .explore-content .explore-title .active {
-  background-color: #c5efffd4;
-  border-top-left-radius: 1rem;
-  border-bottom-left-radius: 1rem;
-}
-.explore .explore-content .explore-body {
-  width: 9.5rem;
-  display: inline-block;
-  margin-top: 1em;
-  margin-left: 2.5rem;
-  background-color: #0058b7;
-  color: white;
-}
-.explore .explore-content .explore-body .content-item {
-  padding: 1em 1em 0.5em 0.5em;
-  border-bottom: 2px solid white;
-  font-size: 16px;
-  width: 80%;
-  margin: auto;
-  cursor: pointer;
-}
-.explore .explore-content .explore-body .content-item:hover img {
-  opacity: 1;
-}
-.explore .explore-content .explore-body .content-item img {
-  display: inline-block;
-  margin-top: 0.3em;
-  opacity: 0;
-  transition: 0.5s;
-  float: right;
-}
 #myInput {
   width: auto;
 }
@@ -163,7 +100,7 @@
 }
 .studentFunction nav {
   z-index: 2;
-  width: 70%;
+  width: 60%;
   border: 1px solid #5aa5ff;
   border-radius: 2rem;
   background-color: #5aa5ff;
@@ -241,6 +178,13 @@
   top: 0.3rem;
   left: 0.3rem;
 }
+#nav-message .message-title img {
+  cursor: pointer;
+  padding: 0.2em;
+}
+#nav-message .message-title img:hover {
+  box-shadow: 0px 0px 2px #555151;
+}
 #nav-message .teacher .avatar-content {
   width: 4rem;
   height: 4rem;
@@ -280,6 +224,58 @@
 #nav-resume .col-6 .form-control {
   width: calc(100% - 6em - 1rem);
 }
+#nav-resume .col-12 img {
+  cursor: pointer;
+}
 #nav-resume .col-12 .form-control {
   margin-left: 5.5rem;
+}
+.test-warn .modal-content {
+  border: 5px solid #ffc533;
+  border-radius: 1rem;
+}
+.test-warn .modal-content h4 {
+  color: #ffc533;
+}
+.test-warn .modal-content ul {
+  text-align: left;
+}
+.single-question .question-footer {
+  text-align: right;
+}
+.single-question .question-footer button:hover {
+  color: #0058b7;
+}
+.news {
+  margin-bottom: 2rem;
+}
+.news .news-title {
+  border-bottom: 2px solid  #5aa5ff;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+.news .news-all .news-content {
+  padding: 1rem 0rem;
+}
+.news .news-all .news-content .news-img {
+  background-color: #ffc533;
+  height: 5rem;
+}
+.news .news-all .news-content .news-info {
+  background-color: #cec7c7;
+}
+.news .news-all .news-content .news-info p {
+  margin-bottom: 0.2em;
+}
+.single-practice {
+  margin-top: 2rem;
+}
+.kind-title {
+  border-bottom: 2px solid  #5aa5ff;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+.modal-content {
+  border: 5px solid #ffc533;
+  border-radius: 1rem;
 }

@@ -9,11 +9,25 @@ $(document).ready(function () {
     var topDistance = parseInt($(".navbar").outerHeight() + $(".firstImg").outerHeight());
     var listenerRange = 50;
 
+    var currentTop = 0;
     $(window).scroll(function () {
-        var scrollCut = topDistance - $("html").scrollTop();
+        //顶栏滚动
+        var htmlTop =$("html").scrollTop()||$("body").scrollTop();
+        console.log(htmlTop);
+        //下滚
+        var navbar = $('.navbar');
+        if(htmlTop-currentTop>0&&navbar.css("display")=='flex'){
+            $('.navbar').slideUp();
+        }
+        else if(htmlTop-currentTop<0&&navbar.css("display")=='none'){
+            $('.navbar').slideDown();
+        }
+        currentTop = htmlTop;
 
-        var displayDistanceBottom = $("html").scrollTop() - topDistance < parseInt(window.innerHeight / 3)
-            && $("html").scrollTop() - topDistance > parseInt(window.innerHeight / 3) - listenerRange;
+        var scrollCut = topDistance - htmlTop;
+
+        var displayDistanceBottom = htmlTop - topDistance < parseInt(window.innerHeight / 3)
+            && htmlTop - topDistance > parseInt(window.innerHeight / 3) - listenerRange;
 
         var displayDistanceTop = (scrollCut > parseInt(window.innerHeight / 3) - listenerRange) &&
             (scrollCut < parseInt(window.innerHeight / 3));
@@ -21,7 +35,7 @@ $(document).ready(function () {
         var cancelDistanceTop = (scrollCut > window.innerHeight / 3) &&
             (scrollCut < parseInt(window.innerHeight / 3) + listenerRange);;
 
-        var cancelDistanceBottom = $("html").scrollTop() - topDistance > (window.innerHeight * 5 / 6);
+        var cancelDistanceBottom = htmlTop - topDistance > (window.innerHeight * 5 / 6);
         //动画开始
         if (displayDistanceBottom || displayDistanceTop) {
             var isChange = Boolean(parseInt($(".img1").css("opacity")));
@@ -63,6 +77,9 @@ $(document).ready(function () {
     }
     );
 })();
+
+// 顶栏动画
+
 
 //代码结尾
 });

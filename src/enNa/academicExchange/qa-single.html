@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../../iframe/bootstrap.min.css">
+    <link rel="stylesheet" href="../public/index.css">
+    <link rel="stylesheet" href="./css/qa-single.css">
+    <title>学科</title>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <!-- topBar -->
+        <nav class="navbar navbar-light fixed-top my-bg pt-3">
+            <a class="navbar-brand" href="../../index.html">
+                <img src="../fonts/enNaLogo.png" width="40" height="40" alt="logo">
+            </a>
+            <div class="explore mx-5">
+                <button type="button" id="explore-botton" class="btn myBtn px-4 py-1">探索</button>
+                <div class="explore-content">
+                    <div class="explore-title">
+                        <div class="title-item" id="title-course">课<br />程</div>
+                        <div class="title-item active" id="title-other">其<br />它</div>
+                    </div>
+                    <div class="explore-body pb-5">
+                        <div class="body-item d-none" id="item-course">
+                            <a href="./archive.html" class="white">
+                                <div class="content-item">分类1<img src="../fonts/arrow.png" width="20em" alt="arrow">
+                                </div>
+                            </a>
+                            <a href="./archive.html" class="white">
+                                <div class="content-item">分类2<img src="../fonts/arrow.png" width="20em" alt="arrow">
+                                </div>
+                            </a>
+                            <a href="./archive.html" class="white">
+                                <div class="content-item">分类3<img src="../fonts/arrow.png" width="20em" alt="arrow">
+                                </div>
+                            </a>
+                            <div class="lookAll text-center mt-5">
+                                <p><a href="./index.html">查看全部</a></p>
+                            </div>
+                        </div>
+                        <div class="body-item" id="item-other">
+                            <div class="content-item">学术交流 <img src="../fonts/arrow.png" width="20em" alt="arrow">
+                            </div>
+                            <div class="content-item">前沿资讯 <img src="../fonts/arrow.png" width="20em" alt="arrow">
+                            </div>
+                            <div class="content-item">企业实习 <img src="../fonts/arrow.png" width="20em" alt="arrow">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="input-group ml-5 pl-5 mt-1 mr-auto" id="myInput">
+                <input type="text" class="form-control" placeholder="">
+                <img src="../fonts/search.png" alt="search" width="38" class="">
+            </a>
+            <span class="mr-5">
+                <img src="../fonts/user.png" width="38" alt="user">
+                <p class="d-inline"></p>
+            </span>
+        </nav>
+        <!-- 主要内容 -->
+        <div class="w-75 mx-auto row main-content">
+            <div class="col-8">
+                <div class="question-content">
+                    <div class="question-topbar py-3 px-2">
+
+                        <h5><button class="btn btn-warning mr-4">Question</button> 有关蒽酮比色法测糖</h5>
+                        <p class="pl-5 question-introduction mt-3">
+                            用蒽酮比色法测糖做标曲时为什么按照文献加完蒽酮溶液再沸水浴后变成这种颜色。而且不同浓度剃度的葡萄糖溶液没有任何色差，根本测不了吸光度值
+                            用的是0.1mg/ml葡萄糖溶液做的，0.2%蒽酮溶液，刚加完蒽酮颜色还是正常的蓝绿色，不同浓度下有色差，只要一沸水浴立刻变成这种棕黑色，无色差，r方达到了0.999。
+                        </p>
+                    </div>
+                </div>
+                <div class="answer-item mt-3 px-2 py-2">
+                    <div class="d-flex">
+                        <span class="avatar mr-4">
+
+                        </span>
+                        <span class="answer my-auto">Answer：中南大学 梅楚红教授</span>
+                    </div>
+                    <div class="answer-content">
+                            根据描述，多有可能为计算时算错了，检查是否葡萄糖浓度配高了10倍，真的0.1mg/ml不会发黑。
+                            步骤没啥问题。加蒽酮溶液时记得冰浴，沸水浴后流水快速冷却。
+                    </div>
+                </div>
+            </div>
+            <!-- 右侧栏 overview -->
+            <div class="col-3 offset-1 text-center py-5">
+                <div class="overview py-4 px-3">
+                    <div class="question w-75 mx-auto">
+                        <img src="../fonts/question.png" class="mr-3" alt="?">
+                        <span>提问</span>
+                    </div>
+                    <div class="concerns mt-3">
+                        <img src="../fonts/concerns.png" alt="关注" class="mr-2">
+                        <span class="mr-2">关注的问题</span>
+                        <span>2</span>
+                    </div>
+                    <div class="my-qa mt-3">
+                        <img src="../fonts/my-qa.png" class="mr-2" alt="问答">
+                        <span class="mr-2">我 的 问 答</span>
+                        <span>4</span>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- 底栏 -->
+        <div class="footer py-5">
+                <div class="row w-75 mx-auto">
+                    <div class="col-2"><img src="../fonts/bottomLogo.png" alt="logo"></div>
+                    <div class="col-2 pl-5">
+                           <p class="toggle-login">学生版</p> 
+                           <p class="toggle-login">教师版</p> 
+                           <p class="toggle-login">企业版</p> 
+                       
+                    </div>
+                    <div class="col-2">
+                        <ul class="footer-ul">
+                            <li>
+                                <a href="../explore/index.html">
+                                    全部课程
+                                </a>
+                            </li>
+                            <li><a href="../explore/front-news.html">
+                                    前沿资讯
+                                </a>
+                            </li>
+                            <li><a href="../partner/shools.html">
+                                    合作高校
+                                </a> </li>
+                            <li><a href="../partner/enterprises.html">
+                                    合作企业
+                                </a> </li>
+                        </ul>
+                    </div>
+                    <div class="col-2 text-center">
+                           <div><a href="../../aboutUs.html">关于我们</a></div>
+                        <img src="../fonts/bottomSR.png" alt="shengren" width="50">
+                    </div>
+                    <div class="col-2 text-center">
+                        <p>关注我们</p>
+                        <img src="../fonts/weixin.png" alt="shengren" width="50">
+                    </div>
+                    <div class="col-2">
+                            <p>手机端下载</p>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <script src="../../iframe/jquery.min.js"></script>
+    <script src="../../iframe//bootstrap.bundle.min.js"></script>
+    <script src="../public/index.js"></script>
+</body>
+
+</html>

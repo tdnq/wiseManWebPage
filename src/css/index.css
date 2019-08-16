@@ -1,7 +1,5 @@
 .container-fluid {
   padding: 0px;
-  max-width: 1366px;
-  min-width: 320px;
   margin: auto;
 }
 .row {
@@ -165,7 +163,7 @@
 }
 .ennaTitle .indexF .myp {
   position: absolute;
-  width: 24%;
+  width: 4.5rem;
   top: 4.5em;
   background-color: #aec5e1ab;
   text-align: center;
@@ -261,7 +259,6 @@
 }
 .footer {
   background-color: #0058b7;
-  color: white;
 }
 .footer .phoneNumber {
   display: inline-block;
@@ -274,18 +271,36 @@
   max-width: 50%;
 }
 .footer .footer-item {
+  text-align: center;
   padding: 0.8em;
+  height: 33.33%;
 }
 .footer .footer-item p {
+  color: white;
   display: inline;
 }
 .footer .footer-item span {
+  color: white;
   display: inline-block;
   height: 0.5em;
   width: 1.5rem;
   border-top: 3px solid white;
   margin-right: 0.5em;
 }
+.footer .phoneNumber {
+  color: white;
+}
+.footer .app-qr-code {
+  color: white;
+  padding-top: 0.5rem;
+}
 .footer .footerContact div {
   display: inline;
+}
+.toggleHover:hover .resToggle {
+  opacity: 1;
+}
+.toggleHover .resToggle {
+  transition: all 0.5s;
+  opacity: 0;
 }

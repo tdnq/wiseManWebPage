@@ -16,6 +16,7 @@
 }
 .teacher-content .tab-control {
   background-color: #0058b7;
+  max-height: 350px;
 }
 .teacher-content .tab-control a {
   color: white;
@@ -29,12 +30,10 @@
   background-color: #0058b7;
   border: 1px solid #ffc533;
 }
-#v-pills-messages .chat-window {
-  background-color: #f9f9f9;
-}
 #v-pills-messages .qa-font {
   position: absolute;
   display: inline-block;
+  left: 0rem;
   width: 3rem;
   border-bottom-right-radius: 50%;
   border-bottom-right-radius: 100%;
@@ -46,13 +45,28 @@
   top: 0.3rem;
   left: 0.3rem;
 }
-#v-pills-messages .teacher .avatar-content {
+#v-pills-messages .message-title {
+  background-color: #f9f9f9;
+}
+#v-pills-messages .message-title img {
+  cursor: pointer;
+  padding: 0.2em;
+}
+#v-pills-messages .message-title img:hover {
+  box-shadow: 0px 0px 2px #555151;
+}
+#v-pills-messages .message-content {
+  background-color: #f9f9f9;
+}
+#v-pills-messages .message-content .teacher .avatar-content,
+#v-pills-messages .message-content .student .avatar-content {
   width: 4rem;
   height: 4rem;
   border-radius: 50%;
   background-color: #5aa5ff;
 }
-#v-pills-messages .teacher .answer-content {
+#v-pills-messages .message-content .teacher .answer-content,
+#v-pills-messages .message-content .student .answer-content {
   padding: 1em 2em;
   border: 2px solid #5aa5ff;
   border-radius: 2rem;
@@ -78,7 +92,33 @@
   background-color: #0058b7;
   color: white;
 }
-.single-course .edit-course {
+.single-course .btn-edit-course {
   border: 2px solid #5aa5ff;
   border-radius: 2rem;
+}
+.opacity-zero {
+  opacity: 0;
+}
+.edit-course {
+  background-color: #f9f9f9;
+}
+.edit-course label {
+  display: inline;
+  vertical-align: top;
+}
+.edit-course input {
+  display: inline-block;
+  margin-left: 2rem;
+  border-radius: 2rem;
+  height: 1.6rem;
+  border: 1px solid #5aa5ff;
+}
+.edit-course textarea {
+  display: inline-block;
+  margin-left: 2rem;
+  border: 1px solid #5aa5ff;
+}
+.edit-course img {
+  margin-left: 2rem;
+  cursor: pointer;
 }

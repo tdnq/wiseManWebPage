@@ -2,8 +2,8 @@
 // public
 .container-fluid{
     padding: 0px;
-    max-width: 1366px;
-    min-width: 320px;
+    // max-width: 1920px;
+    // min-width: 320px;
     margin: auto;
     
 }
@@ -209,7 +209,7 @@
                 }
                 .myp{
                     position: absolute;
-                    width: 24%;
+                    width: 4.5rem;
                     top: 4.5em;
                     background-color: #aec5e1ab;
                     text-align: center;
@@ -304,7 +304,6 @@
 }
 .footer{
     background-color: #0058b7;
-    color: white;
     .phoneNumber{
         display: inline-block;
         height: 2rem;
@@ -316,11 +315,15 @@
         max-width: 50%;
     }
     .footer-item{
+        text-align: center;
         padding: 0.8em;
+        height: 33.33%;
         p{
+            color: white;
             display: inline;
         }
         span{
+            color: white;
             display: inline-block;
             height: 0.5em;
             width: 1.5rem;
@@ -328,11 +331,29 @@
             margin-right: 0.5em;
         }
     }
-    .footerContact{
+    .phoneNumber{
+        color: white;
 
+    }
+    .app-qr-code{
+        color: white;
+        padding-top: 0.5rem;
+    }
+    .footerContact{
         div{
             display: inline;
         }
+    }
+}
+.toggleHover{
+    &:hover{
+        .resToggle{
+            opacity: 1;
+        }
+    }
+    .resToggle{
+        transition: all 0.5s;
+        opacity: 0;
     }
 }
 

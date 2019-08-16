@@ -8,23 +8,23 @@
 .ml-25 {
   margin-left: 20%;
 }
-.teacher-content {
+.enterprise-content {
   margin-top: 74px;
 }
-.teacher-content .teacher-info {
+.enterprise-content .enterprise-info {
   color: white;
 }
-.teacher-content .tab-control {
+.enterprise-content .tab-control {
   background-color: #0058b7;
 }
-.teacher-content .tab-control a {
+.enterprise-content .tab-control a {
   color: white;
 }
-.teacher-content .tab-content .tab-title {
+.enterprise-content .tab-content .tab-title {
   position: relative;
   top: 0.5em;
 }
-.teacher-content .nav-pills .nav-link.active {
+.enterprise-content .nav-pills .nav-link.active {
   color: #fff;
   background-color: #0058b7;
   border: 1px solid #ffc533;
@@ -65,4 +65,70 @@
   background-color: #5aa5ff;
   color: white;
   font-size: 14px;
+}
+.overHidden {
+  overflow: hidden;
+}
+.overHidden nav {
+  z-index: 2;
+  width: 50%;
+  border: 1px solid #5aa5ff;
+  border-radius: 2rem;
+  background-color: #5aa5ff;
+  padding-bottom: 1px;
+}
+.overHidden nav a {
+  color: white;
+}
+.overHidden nav a:hover {
+  color: #0058b7;
+}
+.overHidden nav .active {
+  color: #495057;
+  background-color: #fff;
+  border-color: #dee2e6 #dee2e6 #b3e9ee;
+  border-radius: 2rem;
+  padding: 0.5em 2em;
+}
+.overHidden .segmentation {
+  margin-top: -2.2rem;
+  margin-left: 35%;
+}
+.single-practice {
+  margin-top: 2rem;
+  font-weight: bold;
+  font-size: 1.05em;
+}
+.single-practice .row {
+  background-color: #f9f9f9;
+}
+.single-practice .practice-title {
+  font-size: 20px;
+  font-weight: bold;
+}
+.single-practice .edit-info span {
+  cursor: pointer;
+  font-weight: normal;
+  font-size: 0.9em;
+  float: right;
+}
+.single-practice .edit-info span:hover {
+  color: #0058b7;
+}
+.my-btn {
+  color: white;
+  font-weight: 600;
+  background-color: #5aa5ff;
+  border-radius: 2rem;
+}
+.release-info .modal-header {
+  padding: 0rem;
+  border-bottom: 2px solid #ffc533;
+}
+.release-info .modal-header span {
+  display: inline-block;
+  padding: 0.2rem 1rem;
+  background-color: #ffc533;
+  border-radius: 0.3rem 0.3rem 0rem 0rem;
+  font-weight: bold;
 }

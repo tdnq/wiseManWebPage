@@ -1,295 +1,493 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="../../iframe/bootstrap.min.css">
+    <link rel="stylesheet" href="../public/index.css">
     <link rel="stylesheet" href="./css/index.css">
     <title>嗯呐</title>
 </head>
+
 <body>
     <div class="container-fluid">
         <!-- topBar -->
         <nav class="navbar navbar-light fixed-top my-bg myNav">
-                <a class="navbar-brand" href="../../index.html">
+            <a class="navbar-brand" href="./index.html">
                 <img src="../fonts/enNaLogoY.png" width="40" height="40" alt="logo">
-                </a>
-                <div class="explore mx-5">
-                    <button type="button" id="explore-botton" class="btn myBtn px-4 py-1">探索</button>
-                    <div class="explore-content">
-                        <div class="explore-title">
-                            <div class="title-item" id="title-course">课<br/>程</div>
-                            <div class="title-item active" id="title-other">其<br/>它</div>
-                        </div>
-                        <div class="explore-body pb-5">
-                            <div class="body-item d-none" id="item-course">
-                                    <div class="content-item"><a href="../explore/archive.html" class="white">分类1</a><img src="../fonts/hover箭头.png" width="20em" alt="arrow"></div>
-                                    <div class="content-item"><a href="../explore/archive.html" class="white">分类2</a><img src="../fonts/hover箭头.png" width="20em" alt="arrow"></div>
-                                    <div class="content-item"><a href="../explore/archive.html" class="white">分类3</a><img src="../fonts/hover箭头.png" width="20em" alt="arrow"></div>
-                                    <div class="lookAll text-center mt-5">
-                                        <p><a href="../explore/index.html">查看全部</a> </p>
-                                    </div>
+            </a>
+            <div class="explore mx-5">
+                <button type="button" id="explore-botton" class="btn myBtn px-4 py-1">探索</button>
+                <div class="explore-content">
+                    <div class="explore-title">
+                        <div class="title-item" id="title-course">课<br />程</div>
+                        <div class="title-item active" id="title-other">其<br />它</div>
+                    </div>
+                    <div class="explore-body pb-5">
+                        <div class="body-item d-none py-3" id="item-course">
+                            <div class="content-item">
+                                <!-- <a href="../explore/archive.html" class="white"> -->
+                                    <p class="mb-0 toggle-login">分类1<img src="../fonts/arrow.png" width="20em" alt="arrow"></p>
+                                <!-- </a> -->
                             </div>
-                            <div class="body-item" id="item-other">
-                                    <div class="content-item">学术交流 <img src="../fonts/arrow.png" width="20em" alt="arrow"></div>
-                                    <div class="content-item">前沿资讯 <img src="../fonts/arrow.png" width="20em" alt="arrow"></div>
-                                    <div class="content-item">企业实习 <img src="../fonts/arrow.png" width="20em" alt="arrow"></div>
+                            <div class="content-item">
+                                <!-- <a href="../explore/archive.html" class="white"> -->
+                                    <p class="mb-0 toggle-login">分类2<img src="../fonts/arrow.png" width="20em" alt="arrow"></p>
+                                <!-- </a> -->
+                            </div>
+                            <div class="content-item">
+                                <!-- <a href="../explore/archive.html" class="white"> -->
+                                    <p class="mb-0 toggle-login">分类3<img src="../fonts/arrow.png" width="20em" alt="arrow"></p>
+                                <!-- </a> -->
+                            </div>
+                            <!-- <div class="text-center mt-5">
+                                <button class="btn-lookAll">
+                                    <a href="../explore/index.html">查看全部</a>
+                                </button>
+                            </div> -->
+                        </div>
+                        <div class="body-item py-3" id="item-other">
+                            <div class="content-item">
+                                <!-- <a href="../academicExchange/index.html" class="white"> -->
+                                    <p class="mb-0 toggle-login">学术问答 <img src="../fonts/arrow.png" width="20em" alt="arrow"></p>
+                                <!-- </a> -->
+                            </div>
+                            <div class="content-item">
+                                <!-- <a href="../explore/front-news.html" class="white"> -->
+                                    <p class="mb-0 toggle-login">前沿资讯 <img src="../fonts/arrow.png" width="20em" alt="arrow"></p>
+                                <!-- </a> -->
+                            </div>
+                            <div class="content-item">
+                                <!-- <a href="../practice/index.html" class="white"> -->
+                                    <p class="mb-0 toggle-login">企业实习 <img src="../fonts/arrow.png" width="20em" alt="arrow"></p>
+                                <!-- </a> -->
                             </div>
                         </div>
                     </div>
                 </div>
-                <a class="input-group ml-5 pl-5 mt-1 mr-auto" id="myInput">
-                        <input type="text" class="form-control" placeholder="" aria-label="Recipient's username" aria-describedby="basic-addon2">
-                        <img src="../fonts/search.png" alt="search" width="38" class="">
-                </a>
-                <span class="mr-5">
-                    <img src="../fonts/user.png" width="38" alt="user">
-                    <p class="d-inline">企业版</p>
-                </span>
-            </nav>
+            </div>
+            <a class="input-group ml-5 pl-5 mt-1 mr-auto" id="myInput">
+                <input type="text" class="form-control" placeholder="" aria-label="Recipient's username"
+                    aria-describedby="basic-addon2">
+                <img src="../fonts/search.png" alt="search" width="38" class="">
+            </a>
+        </nav>
         <!-- 登录 -->
-        <div class="modal fade myLoginModal" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal fade myLoginModal" id="exampleModal" tabindex="-1" role="dialog"
+            aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered" role="document">
                 <div class="modal-content">
-                <div class="modal-body pt-0 px-0">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                    </button>
-                    <nav>
-                        <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                            <a class="nav-item nav-link active ml-auto" id="nav-student-tab" data-toggle="tab" href="#nav-student" role="tab" aria-controls="nav-student" aria-selected="true">学生版</a>
-                            <a class="nav-item nav-link" id="nav-teacher-tab" data-toggle="tab" href="#nav-teacher" role="tab" aria-controls="nav-teacher" aria-selected="false">教师版</a>
-                            <a class="nav-item nav-link mr-auto" id="nav-enterprise-tab" data-toggle="tab" href="#nav-enterprise" role="tab" aria-controls="nav-enterprise" aria-selected="false">企业版</a>
-                        </div>
+                    <div class="modal-body pt-0 px-0">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        <nav>
+                            <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                                <a class="nav-item nav-link active ml-auto" id="nav-student-tab" data-toggle="tab"
+                                    href="#nav-student" role="tab" aria-controls="nav-student"
+                                    aria-selected="true">学生版</a>
+                                <a class="nav-item nav-link" id="nav-teacher-tab" data-toggle="tab" href="#nav-teacher"
+                                    role="tab" aria-controls="nav-teacher" aria-selected="false">教师版</a>
+                                <a class="nav-item nav-link mr-auto" id="nav-enterprise-tab" data-toggle="tab"
+                                    href="#nav-enterprise" role="tab" aria-controls="nav-enterprise"
+                                    aria-selected="false">企业版</a>
+                            </div>
                         </nav>
                         <div class="tab-content mt-5" id="nav-tabContent">
-                        <div class="tab-pane fade show active" id="nav-student" role="tabpanel" aria-labelledby="nav-student-tab">
-                            <form>
-                                    <div class="form-group row">
-                                        <label for="staticEmailOne" class="col-3 col-form-label">学号:</label>
-                                        <div class="col-8">
-                                        <input type="text" class="form-control" id="staticEmailOne" value="">
-                                        </div>
-                                    </div>
-                                    <div class="form-group row">
-                                        <label for="inputPasswordOne" class="col-3 col-form-label">密码:</label>
-                                        <div class="col-8">
-                                        <input type="password" class="form-control" id="inputPasswordOne" placeholder="">
-                                        </div>
-                                    </div>
-                                    </form>
-                                <p class="text-right register">
-                                    <a href="#" id="studentRegister" class="pr-1">注册</a>
-                                    <a href="#" class="pr-1">忘记密码？</a>
-                                </p>
-                                <div class="text-center">
-                                    <button type="button" class="btn myBtn px-5">登录</button>
-                                </div>
-                        </div>
-                        <div class="tab-pane fade" id="nav-teacher" role="tabpanel" aria-labelledby="nav-teacher-tab">
-                                <form>
-                                    <div class="form-group row">
-                                            <label for="staticEmailOne" class="col-3 col-form-label">账号:</label>
+                            <div class="tab-pane fade show active" id="nav-student" role="tabpanel"
+                                aria-labelledby="nav-student-tab">
+                                <div class="student-login">
+                                    <form>
+                                        <div class="form-group row">
+                                            <label for="student-shool" class="col-3 col-form-label">学校:</label>
                                             <div class="col-8">
-                                            <input type="text" class="form-control" id="staticEmailOne" value="">
+                                                <input type="text" class="form-control" id="student-shool" value="">
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label for="student-id" class="col-3 col-form-label">学号:</label>
+                                            <div class="col-8">
+                                                <input type="text" class="form-control" id="student-id" value="">
                                             </div>
                                         </div>
                                         <div class="form-group row">
                                             <label for="inputPasswordOne" class="col-3 col-form-label">密码:</label>
                                             <div class="col-8">
-                                            <input type="password" class="form-control" id="inputPasswordOne" placeholder="">
+                                                <input type="password" class="form-control" id="inputPasswordOne"
+                                                    placeholder="">
                                             </div>
                                         </div>
-                                        </form>
+                                    </form>
+                                    <p class="text-right register">
+                                        <a href="#" id="studentRegister" class="pr-1">注册</a>
+                                        <a href="#" class="pr-1">忘记密码？</a>
+                                    </p>
+                                    <div class="text-center">
+                                        <a href="../student/personal.html"><button type="button"
+                                                class="btn btn-signin px-5">登录</button></a>
+                                    </div>
+                                </div>
+                                <!-- 学生注册 -->
+                                <div class="student-signup signup-control">
+                                    <form>
+                                        <div class="form-group row">
+                                            <label for="shool" class="col-3 col-form-label">学校:</label>
+                                            <div class="col-8">
+                                                <input type="text" class="form-control" id="shool" placeholder="">
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label for="student-id" class="col-3 col-form-label">学号:</label>
+                                            <div class="col-8">
+                                                <input type="text" class="form-control" id="student-id" value="">
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label for="inputPasswordOne" class="col-3 col-form-label">密码:</label>
+                                            <div class="col-8">
+                                                <input type="password" class="form-control" id="inputPasswordOne"
+                                                    placeholder="">
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label for="confirm-password" class="col-3 col-form-label">确认密码:</label>
+                                            <div class="col-8">
+                                                <input type="password" class="form-control" id="confirm-password"
+                                                    placeholder="">
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label for="phone-number" class="col-3 col-form-label">手机号:</label>
+                                            <div class="col-8">
+                                                <input type="password" class="form-control" id="phone-number"
+                                                    placeholder="">
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label for="phone-number" class="col-3 col-form-label">验证码:</label>
+                                            <div class="col-4">
+                                                <input type="password" class="form-control" id="phone-number"
+                                                    placeholder="">
+                                            </div>
+                                            <div class="col-4">
+                                                <button class="btn btn-verification">获取验证码</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                    <div class="text-center">
+                                        <button type="button" class="btn btn-signup px-5">注册</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 老师登录 -->
+                            <div class="tab-pane fade" id="nav-teacher" role="tabpanel"
+                                aria-labelledby="nav-teacher-tab">
+                                <!-- 登录 -->
+                                <div class="teacher-login">
+                                    <form>
+                                        <div class="form-group row">
+                                            <label for="staticEmailOne" class="col-3 col-form-label">账号:</label>
+                                            <div class="col-8">
+                                                <input type="text" class="form-control" id="staticEmailOne" value="">
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label for="inputPasswordOne" class="col-3 col-form-label">密码:</label>
+                                            <div class="col-8">
+                                                <input type="password" class="form-control" id="inputPasswordOne"
+                                                    placeholder="">
+                                            </div>
+                                        </div>
+                                    </form>
                                     <p class="text-right register">
                                         <a href="#" id="teacherRegister" class="pr-1">注册</a>
                                         <a href="#" class="pr-1">忘记密码？</a>
                                     </p>
                                     <div class="text-center">
-                                        <button type="button" class="btn myBtn px-5">登录</button>
+                                        <a href="../teacher/index.html"><button type="button"
+                                                class="btn btn-signin px-5">登录</button></a>
                                     </div>
-                        </div>
-                        <div class="tab-pane fade" id="nav-enterprise" role="tabpanel" aria-labelledby="nav-enterprise-tab">
-                            <form id="">
+                                </div>
+                                <!-- 注册 -->
+                                <div class="teacher-signup">
+                                    <form>
+                                        <div class="form-group row">
+                                            <label for="shool" class="col-3 col-form-label">学校:</label>
+                                            <div class="col-8">
+                                                <input type="text" class="form-control" id="shool" placeholder="">
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label for="student-id" class="col-3 col-form-label">账号:</label>
+                                            <div class="col-8">
+                                                <input type="text" class="form-control" id="student-id" value="">
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label for="inputPasswordOne" class="col-3 col-form-label">密码:</label>
+                                            <div class="col-8">
+                                                <input type="password" class="form-control" id="inputPasswordOne"
+                                                    placeholder="">
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label for="confirm-password" class="col-3 col-form-label">确认密码:</label>
+                                            <div class="col-8">
+                                                <input type="password" class="form-control" id="confirm-password"
+                                                    placeholder="">
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label for="phone-number" class="col-3 col-form-label">手机号:</label>
+                                            <div class="col-8">
+                                                <input type="password" class="form-control" id="phone-number"
+                                                    placeholder="">
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label for="phone-number" class="col-3 col-form-label">验证码:</label>
+                                            <div class="col-4">
+                                                <input type="password" class="form-control" id="phone-number"
+                                                    placeholder="">
+                                            </div>
+                                            <div class="col-4">
+                                                <button class="btn btn-verification">获取验证码</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                    <div class="text-center">
+                                        <button type="button" class="btn btn-signup px-5">注册</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 企业登录 -->
+                            <div class="tab-pane fade" id="nav-enterprise" role="tabpanel"
+                                aria-labelledby="nav-enterprise-tab">
+                                <div class="enterprise-login">
+                                    <form>
+                                        <div class="form-group row">
+                                            <label for="staticEmailOne" class="col-5 col-form-label">统一社会信用代码:</label>
+                                            <div class="col-7">
+                                                <input type="text" class="form-control" id="staticEmailOne" value="">
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label for="inputPasswordOne" class="col-5 col-form-label">密码:</label>
+                                            <div class="col-7">
+                                                <input type="password" class="form-control" id="inputPasswordOne"
+                                                    placeholder="">
+                                            </div>
+                                        </div>
+                                    </form>
+                                    <p class="text-right register">
+                                        <a href="#" id="enterpriseRegister" class="pr-1">注册</a>
+                                        <a href="#" class="pr-1">忘记密码？</a>
+                                    </p>
+                                    <div class="text-center">
+                                        <a href="../enterprise/index.html"><button type="button"
+                                                class="btn btn-signin px-5">登录</button></a>
+                                    </div>
+                                </div>
+                                <div class="enterprise-signup">
                                     <div class="form-group row">
-                                        <label for="staticEmailOne" class="col-5 col-form-label">统一社会信用代码:</label>
+                                        <label for="enterprise-id" class="col-5 col-form-label">统一社会信用代码:</label>
                                         <div class="col-7">
-                                        <input type="text" class="form-control" id="staticEmailOne" value="">
+                                            <input type="text" class="form-control" id="enterprise-id" value="">
                                         </div>
                                     </div>
                                     <div class="form-group row">
                                         <label for="inputPasswordOne" class="col-5 col-form-label">密码:</label>
                                         <div class="col-7">
-                                        <input type="password" class="form-control" id="inputPasswordOne" placeholder="">
+                                            <input type="password" class="form-control" id="inputPasswordOne"
+                                                placeholder="">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="confirm-password" class="col-5 col-form-label">确认密码:</label>
+                                        <div class="col-7">
+                                            <input type="password" class="form-control" id="confirm-password"
+                                                placeholder="">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="phone-number" class="col-5 col-form-label">手机号:</label>
+                                        <div class="col-7">
+                                            <input type="password" class="form-control" id="phone-number"
+                                                placeholder="">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="phone-number" class="col-5 col-form-label">验证码:</label>
+                                        <div class="col-3">
+                                            <input type="password" class="form-control" id="phone-number"
+                                                placeholder="">
+                                        </div>
+                                        <div class="col-4">
+                                            <button class="btn btn-verification">获取验证码</button>
                                         </div>
                                     </div>
                                     </form>
-                                <p class="text-right register">
-                                    <a href="#" id="enterpriseRegister" class="pr-1">注册</a>
-                                    <a href="#" class="pr-1">忘记密码？</a>
-                                </p>
-                                <div class="text-center">
-                                    <button type="button" class="btn myBtn px-5">登录</button>
+                                    <div class="text-center">
+                                        <button type="button" class="btn btn-signup px-5">注册</button>
+                                    </div>
                                 </div>
+                            </div>
                         </div>
-                        </div>
-                </div>
+                    </div>
                 </div>
             </div>
-            </div>
+        </div>
         <!-- 第一视口 -->
         <div class="row firstView">
             <div class="col-5 pt-5 d-flex">
                 <div class="logIn mx-auto text-center my-auto">
                     <span class="mt-5 mx-auto">
-                        
+
                     </span>
-                    <button type="button" data-toggle="modal" data-target="#exampleModal" class="btn btn-shadow mt-5 px-4 py-0">登录</button>
+                    <button type="button" data-toggle="modal" data-target="#exampleModal"
+                        class="btn btn-shadow mt-5 px-4 py-0" id="btn-login">登录</button>
                 </div>
             </div>
         </div>
         <!-- 合作高校 -->
         <div class="row w-75 mx-auto cooperation-shool">
-            <div class="col-2">
-                <span>合作高校</span>
+            <div class="col-2 d-flex">
+                <span class="my-auto">合作高校</span>
             </div>
-            <div class="col-2">
-                <span></span>
+            <div class="col-2 d-flex">
+                <img src="../fonts/fudan.jpg" class="m-auto" alt="fudan" width="150">
             </div>
-            <div class="col-2">
-                <span></span>
+            <div class="col-2 d-flex">
+                <img src="../fonts/xiangtan.jpg" width="100" class="m-auto" alt="xd">
             </div>
-            <div class="col-2">
-                <span></span>
+            <div class="col-2 d-flex">
+                <img src="../fonts/shLiGong.gif" alt="shlg" width="150" class="m-auto">
             </div>
-            <div class="col-2">
-                <span></span>
+            <div class="col-2 d-flex">
+                <img src="../fonts/zhongnan.jpg" alt="zn" width="180" class="m-auto">
             </div>
-            <div class="col-2">
-                <span></span>
+            <div class="col-2 d-flex">
+                <a href="../partner/shools.html" class="d-inline-block m-auto"><button class="btn m-auto px-3">查看全部</button></a>
             </div>
         </div>
 
         <!-- 精品课程 -->
         <div class="qualityAnswer w-75 mx-auto">
             <img src="../fonts/indexLine.png" alt="--------">
-            <h3 class="text-center mt-5">热门问答</h3>
-            <div class="answerItem mt-5">
-                <h4>TITLE</h4>
-                <div class="row">
-                    <div class="col-8">
-                        我自狂歌空度日，飞扬跋扈为谁雄
-                        我自狂歌空度日，飞扬跋扈为谁雄
-                        我自狂歌空度日，飞扬跋扈为谁雄
-                        我自狂歌空度日，飞扬跋扈为谁雄
-                        我自狂歌空度日，飞扬跋扈为谁雄
-                        我自狂歌空度日，飞扬跋扈为谁雄
-                    </div>
-                    <div class="col-4">
-                        <div class="answerImg">
-
+            <h5 class="text-center mt-5">学术问答</h5>
+            <div class="aq-content w-75 mx-auto">
+                <div class="answerItem mt-5">
+                    <h5 class="w-50"><button class="btn btn-warning mr-4">Question</button>有关蒽酮比色法测糖</h5>
+                    <div class="row">
+                        <div class="col-12">
+                            <p>用蒽酮比色法测糖做标曲时为什么按照文献加完蒽酮溶液再沸水浴后变成这种颜色。
+                                而且不同浓度剃度的葡萄糖溶液没有任何色差，根本测不了吸光度值...</p>
+                            <span>Answer：中南大学 梅楚红教授</span> <span class="float-right">
+                               <a href="../academicExchange/qa-single.html"><button class="btn my-btn py-0">查看全部</button></a> 
+                            </span>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="answerItem mt-5">
-                <h4>TITLE</h4>
-                <div class="row">
-                    <div class="col-8">
-                        我自狂歌空度日，飞扬跋扈为谁雄
-                        我自狂歌空度日，飞扬跋扈为谁雄
-                        我自狂歌空度日，飞扬跋扈为谁雄
-                        我自狂歌空度日，飞扬跋扈为谁雄
-                        我自狂歌空度日，飞扬跋扈为谁雄
-                        我自狂歌空度日，飞扬跋扈为谁雄
-                    </div>
-                    <div class="col-4">
-                        <div class="answerImg">
-
+                <div class="answerItem mt-5">
+                    <h5 class="w-50"><button class="btn btn-warning mr-4">Question</button>stata多元回归</h5>
+                    <div class="row">
+                        <div class="col-12">
+                            <P>系数超级大，是几十万，还显著，可能是什么原因导致的...</P>
+                            <span>Answer：复旦大学 钟建新副教授</span> <span class="float-right">
+                                <a href="../academicExchange/qa-single.html"><button class="btn my-btn py-0">查看全部</button></a>
+                            </span>
                         </div>
                     </div>
                 </div>
+
             </div>
             <img src="../fonts/indexLine.png" class="mt-5" alt="--------">
         </div>
         <!-- 合作企业 -->
         <div class="cooperation-enterprise mt-5">
             <div class="row w-75 mx-auto">
-                <div class="col-4 text-center pb-2"><img src="../fonts/contact.png" alt="^" width="90"></div>
-                <div class="col-4 text-center pb-2"><img src="../fonts/contact.png" alt="^" width="90"></div>
-                <div class="col-4 text-center pb-2"><img src="../fonts/contact.png" alt="^" width="90"></div>
-                <div class="col-2 text-center">
-                    <span>
-
-                </span>
-            </div>
-                <div class="col-2 text-center">
-                    <span>
-
-                </span></div>
-                <div class="col-2 text-center">
-                    <span>
-
-                </span></div>
-                <div class="col-2 text-center">
-                    <span>
-
-                </span></div>
-                <div class="col-2 text-center">
-                    <span>
-
-                </span></div>
-                <div class="col-2 text-center">
-                    <span>
-
-                </span></div>
-                <div class="col-4 text-center offset-2 pt-2 negative-img"><img src="../fonts/contact.png" alt="^" width="90"></div>
-                <div class="col-4 text-center pt-2 negative-img"><img src="../fonts/contact.png" alt="^" width="90"></div>
-            </div>
-                <div class="lookAll text-center mt-5">
-                    <p class="py-2 px-3">
-                        查看全部
-                    </p>
+                <div class="col-12 mb-5">
+                    <h3 class="text-center">合作企业</h3>
                 </div>
+                <div class="col-4 text-center pb-2"><img src="../fonts/contact.png" alt="^" width="90"></div>
+                <div class="col-4 text-center pb-2"><img src="../fonts/contact.png" alt="^" width="90"></div>
+                <div class="col-4 text-center pb-2"><img src="../fonts/contact.png" alt="^" width="90"></div>
+                <div class="col-2 text-center">
+                    <img src="../fonts/timg1.jpg" alt="" width="90">
+                </div>
+                <div class="col-2 text-center">
+                    <img src="../fonts/timg2.jpg" alt="" width="80">
+                </div>
+                <div class="col-2 text-center">
+                    <a href="../partner/enterprise-single.html"><img src="../fonts/CCIC.png" alt="" width="80"></a>
+                </div>
+                <div class="col-2 text-center">
+                    <img src="../fonts/haohai.png" alt="" width="90" class="border-circle">
+                </div>
+                <div class="col-2 text-center">
+                    <img src="../fonts/shtushuguan.jpg" alt="" width="90" class="border-circle">
+                </div>
+                <div class="col-2 text-center">
+                    <img src="../fonts/zxinwens.png" alt="" width="100" class="border-circle">
+                </div>
+                <div class="col-4 text-center offset-2 pt-2 negative-img"><img src="../fonts/contact.png" alt="^"
+                        width="90"></div>
+                <div class="col-4 text-center pt-2 negative-img"><img src="../fonts/contact.png" alt="^" width="90">
+                </div>
+            </div>
+            <div class="lookAll text-center my-5">
+                <button class="btn lg"><a href="../partner/enterprises.html">查看全部</a> </button>
+            </div>
         </div>
         <!-- 底栏 -->
         <div class="footer py-5">
             <div class="row w-75 mx-auto">
                 <div class="col-2"><img src="../fonts/bottomLogo.png" alt="logo"></div>
+                <div class="col-2 pl-5">
+                       <p class="toggle-login">学生版</p> 
+                       <p class="toggle-login">教师版</p> 
+                       <p class="toggle-login">企业版</p> 
+                   
+                </div>
                 <div class="col-2">
                     <ul class="footer-ul">
-                        <li>学生版</li>
-                        <li>教师版</li>
-                        <li>企业版</li>
+                        <li>
+                            <a href="../explore/index.html">
+                                全部课程
+                            </a>
+                        </li>
+                        <li><a href="../explore/front-news.html">
+                                前沿资讯
+                            </a>
+                        </li>
+                        <li><a href="../partner/shools.html">
+                                合作高校
+                            </a> </li>
+                        <li><a href="../partner/enterprises.html">
+                                合作企业
+                            </a> </li>
                     </ul>
                 </div>
-                <div class="col-2">
-                    <ul class="footer-ul">
-                            <li>全部课程</li>
-                            <li>前沿资讯</li>
-                            <li>合作高校</li>
-                            <li>合作企业</li>
-                        </ul>
-                </div>
                 <div class="col-2 text-center">
-                            <p>关于我们</p>
+                       <div><a href="../../aboutUs.html">关于我们</a></div>
                     <img src="../fonts/bottomSR.png" alt="shengren" width="50">
                 </div>
                 <div class="col-2 text-center">
-                            <p>关注我们</p>
-                    <img src="../fonts/weixin.png" alt="shengren" width="50">   
+                    <p>关注我们</p>
+                    <img src="../fonts/weixin.png" alt="shengren" width="50">
                 </div>
                 <div class="col-2">
-                    <ul class="footer-ul">
-                            <li>手机端下载</li>
-                        </ul>
+                        <p>手机端下载</p>
                 </div>
             </div>
         </div>
     </div>
     <script src="../../iframe/jquery.min.js"></script>
     <script src="../../iframe/bootstrap.bundle.min.js"></script>
+    <script src="../public/index.js"></script>
     <script src="./index.js"></script>
 </body>
+
 </html>

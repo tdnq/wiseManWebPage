@@ -28,149 +28,162 @@
             </span>
         </nav>
         <!-- 内容 -->
-        <div class="row w-75 mx-auto teacher-content py-5">
-                <div class="col-3 tab-control pt-3 pb-5">
-                    <!-- 信息 -->
-                    <img src="../fonts/edit.png" class="edit-img" title="编辑信息" alt="edit">
-                    <div class="teacher-info text-center mt-2">
-                        <div class="avator">
-                            头像
+        <div class="main-content">
+
+            <div class="row w-75 mx-auto teacher-content py-5">
+                    <div class="col-3 tab-control pt-3 pb-5">
+                        <!-- 信息 -->
+                        <img src="../fonts/edit.png" class="edit-img" title="编辑信息" alt="edit">
+                        <div class="teacher-info text-center mt-2">
+                            <div class="avator">
+                                头像
+                            </div>
+                            <div><span class="mr-3">学校</span><span>专业</span></div>
+                            <h5>name</h5>
                         </div>
-                        <div><span class="mr-3">学校</span><span>专业</span></div>
-                        <h5>name</h5>
+                      <div class="nav flex-column nav-pills text-center  px-4 mt-5" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                        <a class="nav-link active" id="v-pills-news-tab" data-toggle="pill" href="#v-pills-news" role="tab" aria-controls="v-pills-news" aria-selected="true">前沿资讯</a>
+                        <a class="nav-link" id="v-pills-courseManagement-tab" data-toggle="pill" href="#v-pills-courseManagement" role="tab" aria-controls="v-pills-courseManagement" aria-selected="false">课程管理</a>
+                        <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">消息</a>
+                      </div>
                     </div>
-                  <div class="nav flex-column nav-pills text-center  px-4 mt-5" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                    <a class="nav-link active" id="v-pills-news-tab" data-toggle="pill" href="#v-pills-news" role="tab" aria-controls="v-pills-news" aria-selected="true">前沿资讯</a>
-                    <a class="nav-link" id="v-pills-courseManagement-tab" data-toggle="pill" href="#v-pills-courseManagement" role="tab" aria-controls="v-pills-courseManagement" aria-selected="false">课程管理</a>
-                    <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">消息</a>
-                  </div>
-                </div>
-                <div class="col-9 pl-5">
-                  <div class="tab-content" id="v-pills-tabContent">
-                    <div class="tab-pane fade show active" id="v-pills-news" role="tabpanel" aria-labelledby="v-pills-news-tab">
-                        <div class="tab-bar">
-                            <p class="mb-0 tab-title">前沿资讯</p>
-                            <img src="../fonts/indexLine.png" alt="tab" width="450" height="3">
-                        </div>
-                    </div>
-                    <!-- 课程管理 -->
-                    <div class="tab-pane fade" id="v-pills-courseManagement" role="tabpanel" aria-labelledby="v-pills-courseManagement-tab">
-                        <div class="tab-bar">
-                                <p class="mb-0 tab-title">课程管理</p>
+                    <div class="col-9 pl-5">
+                      <div class="tab-content" id="v-pills-tabContent">
+                        <div class="tab-pane fade show active" id="v-pills-news" role="tabpanel" aria-labelledby="v-pills-news-tab">
+                            <div class="tab-bar">
+                                <p class="mb-0 tab-title">前沿资讯</p>
                                 <img src="../fonts/indexLine.png" alt="tab" width="450" height="3">
                             </div>
-                            <!-- 单个课程 -->
-                            <div class="row single-course py-3">
-                                    <div class="col-5">
-                                        <div class="course-title">
-                                            <div class="course-img">
-    
-                                            </div>
-                                            <div class="title">
-                                                <h6 class="text-center py-2">计算机网络</h6>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-5 mt-3">
-                                        <div>
-                                            <p class="mt-1 mb-1">
-                                                university
-                                            </p>
-                                            <p>
-                                                teacher name
-                                            </p>
-                                            <div class="courseLearnInfo">
-                                                <span class="learn-amount">
-                                                    <img src="../fonts/personAmount.png" alt="amount">
-                                                    <span>252</span>
-                                                </span>
-                                                <!-- <span class="learn-qa ml-5">
-                                                    <img src="../fonts/问答.png" alt="qa">
-                                                    <span>232</span>
-                                                </span> -->
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-2 text-center px-0 d-flex">
-                                        <button type="button" class="btn edit-course py-1 my-auto mx-auto">编辑课程</button>
-                                    </div>
+                        </div>
+                        <!-- 课程管理 -->
+                        <div class="tab-pane fade" id="v-pills-courseManagement" role="tabpanel" aria-labelledby="v-pills-courseManagement-tab">
+                            <div class="tab-bar">
+                                    <p class="mb-0 tab-title">课程管理</p>
+                                    <img src="../fonts/indexLine.png" alt="tab" width="450" height="3">
                                 </div>
+                                <!-- 单个课程 -->
+                                <div class="row single-course py-3" id="num-1">
+                                        <div class="col-5">
+                                            <div class="course-title">
+                                                <div class="course-img">
+        
+                                                </div>
+                                                <div class="title">
+                                                    <h6 class="text-center py-2">计算机网络</h6>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-5 mt-3">
+                                            <div>
+                                                <p class="mt-1 mb-1">
+                                                    university
+                                                </p>
+                                                <p>
+                                                    teacher name
+                                                </p>
+                                                <div class="courseLearnInfo">
+                                                    <span class="learn-amount">
+                                                        <img src="../fonts/personAmount.png" alt="amount">
+                                                        <span>252</span>
+                                                    </span>
+                                                    <!-- <span class="learn-qa ml-5">
+                                                        <img src="../fonts/问答.png" alt="qa">
+                                                        <span>232</span>
+                                                    </span> -->
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-2 text-center px-0 d-flex">
+                                            <button type="button" class="btn btn-edit-course py-1 my-auto mx-auto" num="num-1">编辑课程</button>
+                                        </div>
+                                    </div>
+                                <!-- 编辑课程 -->
+                        </div>
+                        <!-- 消息部分 -->
+                        <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
+                                <div class="tab-bar">
+                                        <p class="mb-0 tab-title">消息通知</p>
+                                        <img src="../fonts/indexLine.png" alt="tab" width="450" height="3">
+                                    </div>
+                                <div class="message-title position-relative px-2">
+                                        <span class="qa-font"><img src="../fonts/qa.png" alt="aq"></span>
+                                        <div class="open-img text-right">
+                                            <img src="../fonts/shouQi.png" title="展开" id="message-control" alt="close">
+                                        </div>
+                                        <div class="qa-title pt-3 pb-2">
+                                            <h4 class="pl-4">xx同学向你提问</h4>
+                                        </div>
+                                    </div>
+                                    <div class="message-content pb-3">
+                                        <!-- 学生 -->
+                                        <div class="student row">
+                                            <div class="col-2">
+                                                <div class="student-avatar d-flex">
+                                                    <div class="avatar-content">
+            
+                                                    </div>
+                                                </div>
+            
+                                            </div>
+                                            <div class="col-8">
+                                                <div class="answer">
+                                                    <div class="answer-content">
+                                                        是非成败转头空
+                                                        是非成败转头空
+                                                        是非成败转头空
+                                                        是非成败转头空
+                                                        是非成败转头空
+                                                        是非成败转头空
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row diolog mt-5">
+                                            <div class="col-8 offset-lg-2">
+                                                <input type="text" class="form-control" placeholder="">
+                                            </div>
+                                            <div class="col-2">
+                                                <button class="btn send-button px-3">发送</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                        </div>
+                      </div>
                     </div>
-                    <!-- 消息部分 -->
-                    <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
-                        <!-- title -->
-                        <div class="tab-bar">
-                                <p class="mb-0 tab-title">消息</p>
-                                <img src="../fonts/indexLine.png" alt="tab" width="450" height="3">
-                            </div>
-                            <div class="position-relative chat-window pb-3">
-                                <!-- 对话框 -->
-                                <span class="qa-font"><img src="../fonts/qa.png" alt="aq"></span>
-                                <div class="open-img text-right">
-                                    <img src="../fonts/shouQi.png" alt="close">
-                                </div>
-                                <div class="qa-title my-4 pl-5">
-                                    <h5>xx同学在xx课程xx单元中向你提问</h5>
-                                </div>
-                                <!-- 学生 -->
-                                <div class="teacher row">
-                                    <div class="col-2">
-                                        <div class="teacher-avatar d-flex">
-                                            <div class="avatar-content">
-    
-                                            </div>
-                                        </div>
-    
-                                    </div>
-                                    <div class="col-8">
-                                        <div class="answer">
-                                            <div class="answer-content">
-                                                是非成败转头空
-                                                是非成败转头空
-                                                是非成败转头空
-                                                是非成败转头空
-                                                是非成败转头空
-                                                是非成败转头空
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-    
-                                <div class="row diolog mt-5">
-                                    <div class="col-8 offset-lg-2">
-                                        <input type="text" class="form-control" placeholder="">
-                                    </div>
-                                    <div class="col-2">
-                                        <button class="btn send-button px-3">发送</button>
-                                    </div>
-                                </div>
-                                
-                            </div>
-                    </div>
-                  </div>
-                </div>
-            </div>
+        </div>
         <!-- 底栏 -->
         <div class="footer py-5">
                 <div class="row w-75 mx-auto">
                     <div class="col-2"><img src="../fonts/bottomLogo.png" alt="logo"></div>
-                    <div class="col-2">
-                        <ul class="footer-ul">
-                            <li>学生版</li>
-                            <li>教师版</li>
-                            <li>企业版</li>
-                        </ul>
+                    <div class="col-2 pl-5">
+                           <p class="toggle-login">学生版</p> 
+                           <p class="toggle-login">教师版</p> 
+                           <p class="toggle-login">企业版</p> 
+                       
                     </div>
                     <div class="col-2">
                         <ul class="footer-ul">
-                            <li>全部课程</li>
-                            <li>前沿资讯</li>
-                            <li>合作高校</li>
-                            <li>合作企业</li>
+                            <li>
+                                <a href="../explore/index.html">
+                                    全部课程
+                                </a>
+                            </li>
+                            <li><a href="../explore/front-news.html">
+                                    前沿资讯
+                                </a>
+                            </li>
+                            <li><a href="../partner/shools.html">
+                                    合作高校
+                                </a> </li>
+                            <li><a href="../partner/enterprises.html">
+                                    合作企业
+                                </a> </li>
                         </ul>
                     </div>
                     <div class="col-2 text-center">
-                        <p>关于我们</p>
+                           <div><a href="../../aboutUs.html">关于我们</a></div>
                         <img src="../fonts/bottomSR.png" alt="shengren" width="50">
                     </div>
                     <div class="col-2 text-center">
@@ -178,15 +191,14 @@
                         <img src="../fonts/weixin.png" alt="shengren" width="50">
                     </div>
                     <div class="col-2">
-                        <ul class="footer-ul">
-                            <li>手机端下载</li>
-                        </ul>
+                            <p>手机端下载</p>
                     </div>
                 </div>
             </div>
     </div>
     <script src="../../iframe/jquery.min.js"></script>
     <script src="../../iframe//bootstrap.bundle.min.js"></script>
+    <script src="./index.js"></script>
 </body>
 
 </html>

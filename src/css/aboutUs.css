@@ -1,9 +1,10 @@
 .container-fluid {
   padding: 0px;
-  max-width: 1366px;
-  min-width: 320px;
   margin: auto;
   overflow: hidden;
+}
+.font20 {
+  font-size: 20px;
 }
 .w-65 {
   width: 65%;
@@ -136,11 +137,16 @@
   -webkit-transform: translateX(2em);
 }
 .footer {
-  font-family: "微软雅黑";
+  background-color: white;
 }
 .footer .phoneNumber {
   display: inline-block;
   height: 2rem;
+  color: black;
+}
+.footer a:hover {
+  text-decoration-line: 2px;
+  color: #0058b7;
 }
 .footer * {
   white-space: nowrap;
@@ -150,16 +156,24 @@
 }
 .footer .footer-item {
   padding: 0.8em;
+  height: 33.33%;
+  text-align: center;
 }
 .footer .footer-item p {
+  color: black;
   display: inline;
 }
 .footer .footer-item span {
+  color: black;
   display: inline-block;
   height: 0.5em;
   width: 1.5rem;
-  border-top: 3px solid black;
+  border-top: 3px solid ;
   margin-right: 0.5em;
+}
+.footer .app-qr-code {
+  color: black;
+  padding-top: 0.5rem;
 }
 .footer .footerContact div {
   display: inline;
@@ -189,7 +203,12 @@
   transition-delay: 0.4s;
   -webkit-transition-delay: 0.4s;
 }
-@media (min-width: 720px) {
+@media (min-width: 1500px) and (max-width: 2000px) {
+  .navbar-brand {
+    font-size: 1.5rem;
+  }
+}
+@media (min-width: 720px) and (max-width: 1366px) {
   .mt-10 {
     margin-top: 13rem;
   }
@@ -236,4 +255,11 @@
   width: 60%;
   height: 300px;
   background-color: #ffc533;
+}
+.toggleHover:hover .resToggle {
+  opacity: 1;
+}
+.toggleHover .resToggle {
+  transition: all 1s;
+  opacity: 0;
 }

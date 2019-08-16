@@ -17,6 +17,7 @@
 .course .course-bar .btn-learn {
   border-radius: 2rem;
   background-color: #5aa5ff;
+  color: white;
 }
 .course .charpter-content {
   padding-left: 1rem;

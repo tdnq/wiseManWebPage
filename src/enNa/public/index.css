@@ -1,6 +1,32 @@
 .white{
   color: white;
 }
+.my-btn {
+  color: white;
+  font-weight: 600;
+  background-color: #5aa5ff;
+  border-radius: 2rem;
+}
+/* 模态关闭 */
+.modal-close {
+  position: absolute;
+  right: -2rem;
+  font-size: 2.5rem;
+  top: -2.5rem;
+  color: #ffc533;
+}
+.modal-close:hover{
+  color: #ffc533;
+}
+
+.explore .btn-lookAll{
+    color: black;
+      border: 1px solid #f8f9fa;
+      border-radius: 2rem;
+  }
+  .btn-lookAll a{
+    color: black;
+  }
 .container-fluid {
   padding: 0px;
   min-width: 1166px;
@@ -23,10 +49,21 @@
 .explore-body a:hover{
     text-decoration: none;
     color: white;
-
+}
+.explore .btn-lookAll{
+  border: 1px solid #f8f9fa;
+  border-radius: 2rem;
+}
+.explore .btn-lookAll a{
+  color: black;
 }
 .explore-body .lookAll a:hover{
   color: rgb(111, 153, 151);
+}
+
+/* 内容区最小高度 */
+.main-content{
+  min-height: calc(100vh - 74px);
 }
 /* 顶栏 */
 .my-bg {
@@ -35,6 +72,7 @@
 .form-control:focus {
   box-shadow: 0 0 0 0 white;
 }
+/* 探索 */
 .explore {
   position: relative;
 }
@@ -57,11 +95,14 @@
   display: inline-block;
   position: absolute;
   background-color: #0058b7;
+  border: 1px solid #4d78ac;
+  box-shadow: 0px 0px 1px #455971;
   border-top-left-radius: 1rem;
   border-bottom-left-radius: 1rem;
   font-size: 14px;
   color: white;
   text-align: center;
+  margin-top: 1em;
 }
 .explore .explore-content .explore-title .title-item {
   padding: 1em 0em 1em 0em;
@@ -111,21 +152,47 @@
   left: -38px;
   z-index: 5;
 }
-
+/* 浏览所有课程 */
+.look-all-course span {
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+}
+.look-all-course .bg-line-left {
+  border-left: 3px solid #ffc533;
+  border-bottom: 3px solid #ffc533;
+}
+.look-all-course .bg-line-right {
+  border-right: 3px solid #ffc533;
+  border-bottom: 3px solid #ffc533;
+}
+.look-all-course a {
+  position: relative;
+  top: -0.6em;
+  color: black;
+}
+.look-all-course a:hover {
+  color: #5aa5ff;
+}
 
 /* 底栏 */
 .footer {
     background-color: #0058b7;
     color: white;
   }
-  .footer p {
-    padding: 0.5em 0em;
-  }
   .footer ul {
     list-style: none;
   }
-  .footer ul li {
+  .footer a{
+    color: white;
     padding: 0.5em 0em;
+    display: inline-block;
+  }
+  .footer p{
+    margin: 0px;
+    color: white;
+    padding: 0.5em 0em;
+    cursor: pointer;
   }
   .footer img {
     display: inline-block;

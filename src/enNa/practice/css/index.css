@@ -1,0 +1,26 @@
+.kind-title {
+  border-bottom: 2px solid  #5aa5ff;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+.main-content {
+  margin-top: 74px;
+  min-height: calc(100vh - 74px);
+}
+.single-practice {
+  margin-top: 2rem;
+  font-size: 1.05em;
+}
+.single-practice .row {
+  background-color: #f9f9f9;
+}
+.single-practice .practice-title {
+  font-size: 20px;
+  font-weight: 500;
+}
+.single-practice .my-btn {
+  color: white;
+  font-weight: 600;
+  background-color: #5aa5ff;
+  border-radius: 2rem;
+}

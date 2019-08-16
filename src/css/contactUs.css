@@ -1,7 +1,5 @@
 .container-fluid {
   padding: 0px;
-  max-width: 1366px;
-  min-width: 320px;
   margin: auto;
 }
 .row {
@@ -49,12 +47,12 @@
   min-height: 100vh;
 }
 .content .contentBox {
-  height: 18rem;
+  height: 21rem;
   background-image: url("../fonts/contactUsBg.png");
   background-size: 100% 100%;
   font-size: 16px;
   max-width: 13.75em;
-  min-width: 12em;
+  min-width: 13em;
 }
 .content .contentBox figure {
   text-align: center;
@@ -62,5 +60,16 @@
   color: white;
 }
 .content .contentBox figure p {
-  margin-top: 3em;
+  margin-bottom: 0px;
+}
+.content .contentBox .name {
+  color: white;
+  font-size: 1.1em;
+  text-shadow: 1px 1px 1px #9ecece;
+}
+.content .contentBox .contact-method {
+  font-size: 1.1em;
+}
+.content .contentBox .type {
+  font-size: 0.95em;
 }

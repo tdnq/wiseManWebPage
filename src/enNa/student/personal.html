@@ -15,33 +15,39 @@
     <div class="container-fluid">
         <!-- topBar -->
         <nav class="navbar navbar-light fixed-top my-bg pt-3">
-            <a class="navbar-brand" href="../../index.html">
+            <a class="navbar-brand" href="../index/index.html">
                 <img src="../fonts/enNaLogo.png" width="40" height="40" alt="logo">
             </a>
             <div class="explore mx-5">
                 <button type="button" id="explore-botton" class="btn myBtn px-4 py-1">探索</button>
                 <div class="explore-content">
                     <div class="explore-title">
-                        <div class="title-item" id="title-course">课<br />程</div>
-                        <div class="title-item active" id="title-other">其<br />它</div>
+                        <div class="title-item active" id="title-course">课<br />程</div>
+                        <!-- <div class="title-item active" id="title-other">其<br />它</div> -->
                     </div>
                     <div class="explore-body pb-5">
-                        <div class="body-item d-none" id="item-course">
-                                <div class="content-item"><a href="../explore/archive.html" class="white">分类1</a><img src="../fonts/arrow.png" width="20em" alt="arrow"></div>
-                                <div class="content-item"><a href="../explore/archive.html" class="white">分类2</a><img src="../fonts/arrow.png" width="20em" alt="arrow"></div>
-                                <div class="content-item"><a href="../explore/archive.html" class="white">分类3</a><img src="../fonts/arrow.png" width="20em" alt="arrow"></div>
-                            <div class="lookAll text-center mt-5">
-                                <p><a href="../explore/index.html">查看全部</a></p>
-                            </div>
+                        <div class="body-item" id="item-course">
+                                <div class="content-item"><a href="../explore/archive.html" class="white"><p class="mb-0">分类1<img src="../fonts/arrow.png" width="20em" alt="arrow"></p></a></div>
+                                <div class="content-item"><a href="../explore/archive.html" class="white"><p class="mb-0">分类2<img src="../fonts/arrow.png" width="20em" alt="arrow"></p></a></div>
+                                <div class="content-item"><a href="../explore/archive.html" class="white"><p class="mb-0">分类3<img src="../fonts/arrow.png" width="20em" alt="arrow"></p></a></div>
+                                <div class="text-center mt-5">
+                                        <button class="btn-lookAll"><a href="../explore/index.html">查看全部</a></button>
+                                    </div>
                         </div>
-                        <div class="body-item" id="item-other">
-                            <div class="content-item">学术交流 <img src="../fonts/arrow.png" width="20em" alt="arrow">
+                        <!-- <div class="body-item" id="item-other">
+                            <div class="content-item">
+                                <a href="../academicExchange/index.html">
+                                    <p class="mb-0"> 
+                                        学术交流 <img src="../fonts/arrow.png" width="20em" alt="arrow">
+                                    </p>
+                                </a>
                             </div>
                             <div class="content-item">前沿资讯 <img src="../fonts/arrow.png" width="20em" alt="arrow">
                             </div>
-                            <div class="content-item">企业实习 <img src="../fonts/arrow.png" width="20em" alt="arrow">
+                            <div class="content-item"> 
+                                <a href="../practice/index.html"><p class="mb-0"> 企业实习 <img src="../fonts/arrow.png" width="20em" alt="arrow"></p></a>
                             </div>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </div>
@@ -49,10 +55,6 @@
                 <input type="text" class="form-control" placeholder="">
                 <img src="../fonts/search.png" alt="search" width="38" class="">
             </a>
-            <span class="mr-5">
-                <img src="../fonts/user.png" width="38" alt="user">
-                <p class="d-inline"></p>
-            </span>
         </nav>
         <!-- 信息部分 -->
         <div class="personal-info">
@@ -60,7 +62,6 @@
                 <div class="col-2">
                     <div class="avatar d-flex">
                         <div class="avatar-content">
-
                         </div>
                     </div>
                 </div>
@@ -73,7 +74,7 @@
                 <div class="col-2 borderRightWhite">
                     <div class="course">
                         <img src="../fonts/course.png" alt="course">
-                        <span class="title ml-2">课程数量
+                        <span class="title ml-2">课程情况
                             <span class="amount">2个</span>
                         </span>
 
@@ -105,19 +106,93 @@
                     <nav>
                         <div class="nav nav-tabs border-bottom-0" id="nav-tab" role="tablist">
                             <a class="nav-item nav-link border-0 active" id="nav-course-tab" data-toggle="tab"
-                                href="#nav-course" role="tab" aria-controls="nav-course" aria-selected="true">课程</a>
+                                href="#nav-course" role="tab" aria-controls="nav-course" aria-selected="true">学术问答</a>
                             <a class="nav-item nav-link border-0" id="nav-message-tab" data-toggle="tab"
-                                href="#nav-message" role="tab" aria-controls="nav-message" aria-selected="false">消息</a>
+                                href="#nav-message" role="tab" aria-controls="nav-message" aria-selected="false">前沿资讯</a>
                             <a class="nav-item nav-link border-0" id="nav-resume-tab" data-toggle="tab"
-                                href="#nav-resume" role="tab" aria-controls="nav-resume" aria-selected="false">简历</a>
+                                href="#nav-resume" role="tab" aria-controls="nav-resume" aria-selected="false">企业实习</a>
                         </div>
                     </nav>
                     <img src="../fonts/line.png" alt="-----" class="segmentation">
-                    <div class="tab-content py-3 px-2" id="nav-tabContent">
-                        <!-- 课程 -->
+                    <div class="tab-content pt-3 pb-2 px-2" id="nav-tabContent">
+                        <!-- 学术问答 -->
                         <div class="tab-pane px-0 fade  show active" id="nav-course" role="tabpanel"
                             aria-labelledby="nav-course-tab">
-                            <div class="row">
+                            <div class="modal fade look-all-content" tabindex="-1" role="dialog" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered modal-sm">
+                                        <div class="modal-content">
+                                            <div class="modal-body">
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                        </button>
+                                                <p>如需查看全部回答，需要支付 3 积分</p>
+                                                <div class="text-center"><img src="../fonts/score.png" alt="积分" class="mr-3">所有积分：<span>666</span></div>
+                                                <div class="text-right pr-4">
+                                                   <a href="../academicExchange/qa-single.html"><button class="btn my-btn py-0">确 定</button></a> 
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    </div>
+                                <!-- 问题部分 -->
+                                <div class="single-question px-4 py-3 mt-2">
+                                    <h5><button class="btn btn-warning mr-4">Question</button> 有关蒽酮比色法测糖</h5>
+                                    <p class="question-body">
+                                            用蒽酮比色法测糖做标曲时为什么按照文献加完蒽酮溶液再沸水浴后变成这种颜色。
+                                            而且不同浓度剃度的葡萄糖溶液没有任何色差，根本测不了吸光度值...
+                                    </p>
+                                    <div class="question-footer">
+                                        <button class="btn" data-toggle="modal" data-target=".look-all-content">查看全部</button>
+                                    </div>
+                                </div>
+    
+                                <div class="single-question px-4 py-3 mt-2">
+                                    <h5 class="question-title"><button class="btn btn-warning mr-4">Question</button>stata多元回归</h5>
+                                    <p class="question-body">
+                                            系数超级大，是几十万，还显著，可能是什么原因导致...
+                                    </p>
+                                    <div class="question-footer">
+                                        <button class="btn" data-toggle="modal" data-target=".look-all-content">查看全部</button>
+                                    </div>
+                                </div>
+                                <div class="single-question px-4 py-3 mt-2">
+                                    <h5 class="question-title"><button class="btn btn-warning mr-4">Question</button>stata多元回归</h5>
+                                    <p class="question-body">
+                                            系数超级大，是几十万，还显著，可能是什么原因导致...
+                                    </p>
+                                    <div class="question-footer">
+                                        <button class="btn" data-toggle="modal" data-target=".look-all-content">查看全部</button>
+                                    </div>
+                                </div>
+                                <div class="single-question px-4 py-3 mt-2">
+                                    <h5 class="question-title"><button class="btn btn-warning mr-4">Question</button>stata多元回归</h5>
+                                    <p class="question-body">
+                                            系数超级大，是几十万，还显著，可能是什么原因导致...
+                                    </p>
+                                    <div class="question-footer">
+                                        <button class="btn" data-toggle="modal" data-target=".look-all-content">查看全部</button>
+                                    </div>
+                                </div>
+                                <div class="single-question px-4 py-3 mt-2">
+                                    <h5 class="question-title"><button class="btn btn-warning mr-4">Question</button>stata多元回归</h5>
+                                    <p class="question-body">
+                                            系数超级大，是几十万，还显著，可能是什么原因导致...
+                                    </p>
+                                    <div class="question-footer">
+                                        <button class="btn" data-toggle="modal" data-target=".look-all-content">查看全部</button>
+                                    </div>
+                                </div>
+                                <div class="single-question px-4 py-3 mt-2">
+                                    <h5 class="question-title"><button class="btn btn-warning mr-4">Question</button>stata多元回归</h5>
+                                    <p class="question-body">
+                                            系数超级大，是几十万，还显著，可能是什么原因导致...
+                                    </p>
+                                    <div class="question-footer">
+                                        <button class="btn" data-toggle="modal" data-target=".look-all-content">查看全部</button>
+                                    </div>
+                                </div>
+                                <!-- 舍弃的课程部分 -->
+                            <!-- <div class="row">
                                 <div class="col-5">
                                     <div class="course-title">
                                         <div class="course-img">
@@ -156,55 +231,303 @@
                                 <div class="col-2 text-center px-0 d-flex">
                                     <button type="button" class="btn start-learn py-1 my-auto mx-auto">开始学习</button>
                                 </div>
-                            </div>
+                            </div> -->
                         </div>
-                        <!-- 消息 -->
+                        <!-- 资讯信息 -->
                         <div class="tab-pane fade position-relative" id="nav-message" role="tabpanel"
                             aria-labelledby="nav-message-tab">
-                            <span class="qa-font"><img src="../fonts/qa.png" alt="aq"></span>
-                            <div class="open-img text-right">
-                                <img src="../fonts/shouQi.png" alt="close">
-                            </div>
-                            <div class="qa-title mb-5">
-                                <h4>老师回答了你的问题</h4>
-                            </div>
-                            <!-- 老师 -->
-                            <div class="teacher row">
-                                <div class="col-2">
-                                    <div class="teacher-avatar d-flex">
-                                        <div class="avatar-content">
-
+                                    <!-- 高校资讯 -->
+                                <div class="mx-auto news news-shool w-75">
+                                        <div class="py-1 mb-4">
+                                            <span class="news-title px-2">
+                                                高校资讯
+                                            </span>
+                                        </div>
+                                        <div class="news-all">
+                                            <div class="row">
+                                                <div class="col-3">
+                                                    <div class="news-content">
+                                                        <div class="news-img">
+                        
+                                                        </div>
+                                                        <div class="news-info px-1 py-1">
+                                                            <p>介绍:</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-3">
+                                                    <div class="news-content">
+                                                        <div class="news-img">
+                        
+                                                        </div>
+                                                        <div class="news-info px-1 py-1">
+                                                            <p>介绍:</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-3">
+                                                    <div class="news-content">
+                                                        <div class="news-img">
+                        
+                                                        </div>
+                                                        <div class="news-info px-1 py-1">
+                                                            <p>介绍:</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-3">
+                                                    <div class="news-content">
+                                                        <div class="news-img">
+                        
+                                                        </div>
+                                                        <div class="news-info px-1 py-1">
+                                                            <p>介绍:</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-3">
+                                                    <div class="news-content">
+                                                        <div class="news-img">
+                        
+                                                        </div>
+                                                        <div class="news-info px-1 py-1">
+                                                            <p>介绍:</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-3">
+                                                    <div class="news-content">
+                                                        <div class="news-img">
+                        
+                                                        </div>
+                                                        <div class="news-info px-1 py-1">
+                                                            <p>介绍:</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-3">
+                                                    <div class="news-content">
+                                                        <div class="news-img">
+                        
+                                                        </div>
+                                                        <div class="news-info px-1 py-1">
+                                                            <p>介绍:</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-3">
+                                                    <div class="news-content">
+                                                        <div class="news-img">
+                        
+                                                        </div>
+                                                        <div class="news-info px-1 py-1">
+                                                            <p>介绍:</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
-
+                                    <!-- 企业资讯 -->
+                                    <div class="mx-auto news news-enterprise w-75">
+                                        <div class="py-1 mb-4">
+                                            <span class="news-title px-2">
+                                                企业资讯
+                                            </span>
+                                        </div>
+                                        <div class="news-all">
+                                            <div class="row">
+                                                <div class="col-3">
+                                                    <div class="news-content">
+                                                        <div class="news-img">
+                        
+                                                        </div>
+                                                        <div class="news-info px-1 py-1">
+                                                            <p>介绍:</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-3">
+                                                    <div class="news-content">
+                                                        <div class="news-img">
+                        
+                                                        </div>
+                                                        <div class="news-info px-1 py-1">
+                                                            <p>介绍:</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-3">
+                                                    <div class="news-content">
+                                                        <div class="news-img">
+                        
+                                                        </div>
+                                                        <div class="news-info px-1 py-1">
+                                                            <p>介绍:</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-3">
+                                                    <div class="news-content">
+                                                        <div class="news-img">
+                        
+                                                        </div>
+                                                        <div class="news-info px-1 py-1">
+                                                            <p>介绍:</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+    
+                            <!-- 废弃的消息部分 -->
+                            <!-- <div>
+                                <div class="message-title position-relative">
+                                    <span class="qa-font"><img src="../fonts/qa.png" alt="aq"></span>
+                                    <div class="open-img text-right">
+                                        <img src="../fonts/shouQi.png" title="展开" id="message-control" alt="close">
+                                    </div>
+                                    <div class="qa-title mt-1 mb-3">
+                                        <h4>老师回答了你的问题</h4>
+                                    </div>
                                 </div>
-                                <div class="col-8">
-                                    <div class="answer">
-                                        <div class="answer-content">
-                                            是非成败转头空
-                                            是非成败转头空
-                                            是非成败转头空
-                                            是非成败转头空
-                                            是非成败转头空
-                                            是非成败转头空
+                                <div class="message-content">
+                                    <div class="teacher row">
+                                        <div class="col-2">
+                                            <div class="teacher-avatar d-flex">
+                                                <div class="avatar-content">
+        
+                                                </div>
+                                            </div>
+        
+                                        </div>
+                                        <div class="col-8">
+                                            <div class="answer">
+                                                <div class="answer-content">
+                                                    是非成败转头空
+                                                    是非成败转头空
+                                                    是非成败转头空
+                                                    是非成败转头空
+                                                    是非成败转头空
+                                                    是非成败转头空
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row diolog mt-5">
+                                        <div class="col-8 offset-lg-2">
+                                            <input type="text" class="form-control" placeholder="">
+                                        </div>
+                                        <div class="col-2">
+                                            <button class="btn send-button px-3">发送</button>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-
-                            <div class="row diolog mt-5">
-                                <div class="col-8 offset-lg-2">
-                                    <input type="text" class="form-control" placeholder="">
-                                </div>
-                                <div class="col-2">
-                                    <button class="btn send-button px-3">发送</button>
-                                </div>
-                            </div>
+                            </div> -->
                         </div>
-                        <!-- 简历 -->
+                        <!-- 实习信息 -->
                         <div class="tab-pane fade" id="nav-resume" role="tabpanel"
                             aria-labelledby="nav-resume-tab">
-                            <div class="row">
+                            <div>
+                                    <span class="kind-title pl-3">
+                                        <span>企业实习</span> 
+                                    </span>
+                                </div>
+                                <div class="single-practice">
+                                    <div class="row mx-auto px-2 py-2">
+                                        <div class="col-8">
+                                            <div class="practice-title">
+                                                中国检验认证（集团）有限公司--<strong>实验室技术员</strong> 
+                                            </div>
+                                            <div class="practice-time mt-3">
+                                                时间：2018-01-23~2018-02-04
+                                            </div>
+                                            <div class="practice-address mt-2">
+                                                    地点：万荣路1218弄B栋6号楼
+                                            </div>
+                                        </div>
+                                        <div class="col-4 text-center">
+                                            <div class="practice-salary mt-4">
+                                                    100元/天
+                                            </div>
+                                            <div class="submit-resume mt-3">
+                                               <a href="../practice/practice-single.html"> <button class="btn my-btn py-0">查看全部</button></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="single-practice">
+                                    <div class="row mx-auto px-2 py-2">
+                                        <div class="col-8">
+                                            <div class="practice-title">
+                                                中国检验认证（集团）有限公司--<strong>实验室技术员</strong> 
+                                            </div>
+                                            <div class="practice-time mt-3">
+                                                时间：2018-01-23~2018-02-04
+                                            </div>
+                                            <div class="practice-address mt-2">
+                                                    地点：万荣路1218弄B栋6号楼
+                                            </div>
+                                        </div>
+                                        <div class="col-4 text-center">
+                                            <div class="practice-salary mt-4">
+                                                    100元/天
+                                            </div>
+                                            <div class="submit-resume mt-3">
+                                               <a href="../practice/practice-single.html"> <button class="btn my-btn py-0">查看全部</button></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="single-practice">
+                                    <div class="row mx-auto px-2 py-2">
+                                        <div class="col-8">
+                                            <div class="practice-title">
+                                                中国检验认证（集团）有限公司--<strong>实验室技术员</strong> 
+                                            </div>
+                                            <div class="practice-time mt-3">
+                                                时间：2018-01-23~2018-02-04
+                                            </div>
+                                            <div class="practice-address mt-2">
+                                                    地点：万荣路1218弄B栋6号楼
+                                            </div>
+                                        </div>
+                                        <div class="col-4 text-center">
+                                            <div class="practice-salary mt-4">
+                                                    100元/天
+                                            </div>
+                                            <div class="submit-resume mt-3">
+                                               <a href="../practice/practice-single.html"> <button class="btn my-btn py-0">查看全部</button></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="single-practice">
+                                    <div class="row mx-auto px-2 py-2">
+                                        <div class="col-8">
+                                            <div class="practice-title">
+                                                中国检验认证（集团）有限公司--<strong>实验室技术员</strong> 
+                                            </div>
+                                            <div class="practice-time mt-3">
+                                                时间：2018-01-23~2018-02-04
+                                            </div>
+                                            <div class="practice-address mt-2">
+                                                    地点：万荣路1218弄B栋6号楼
+                                            </div>
+                                        </div>
+                                        <div class="col-4 text-center">
+                                            <div class="practice-salary mt-4">
+                                                    100元/天
+                                            </div>
+                                            <div class="submit-resume mt-3">
+                                               <a href="../practice/practice-single.html"> <button class="btn my-btn py-0">查看全部</button></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            <!-- 废弃的简历部分 -->
+                            <!-- <div class="row">
                                 <div class="col-6 mt-2">
                                     <label for="name">姓名:</label>
                                     <input type="text" class="form-control" id="name" />
@@ -252,8 +575,8 @@
                                         <span>(请上传个人一寸或二寸证件照)</span>
                                     </div>
                                     <input type="text" class="form-control w-50">
-                                    <img src="../fonts/resource.png" alt="upload" class="ml-5" width="40">
-                                    <input type="file" class='form-control opacity-zero' />
+                                    <img class="upload-img ml-5" src="../fonts/resource.png" alt="photo" width="40">
+                                    <input type="file" class='form-control opacity-zero' id="photo" />
 
                                 </div>
                                 <div class="col-12 mt-2">
@@ -263,8 +586,8 @@
                                     </div>
 
                                     <input type="text" class="form-control w-50">
-                                    <img src="../fonts/resource.png" alt="upload" class="ml-5" width="40">
-                                    <input type="file" class='form-control opacity-zero' />
+                                    <img src="../fonts/resource.png" alt="learn-grade" class="ml-5 upload-img" width="40">
+                                    <input type="file" class='form-control opacity-zero' id="learn-grade" />
                                 </div>
                                 <div class="col-12 mt-2">
                                     <div>
@@ -272,8 +595,8 @@
                                         <span>(请上传相关证件)</span>
                                     </div>
                                     <input type="text" class="form-control w-50">
-                                    <img src="../fonts/resource.png" alt="upload" class="ml-5" width="40">
-                                    <input type="file" class='form-control opacity-zero' />
+                                    <img src="../fonts/resource.png" alt="skill" class="ml-5 upload-img" width="40">
+                                    <input type="file" class='form-control opacity-zero' id="skill" />
                                 </div>
                                 <div class="col-12 mt-2">
                                     <div>
@@ -282,10 +605,47 @@
                                         <span>(请上传参加项目或比赛的相关资料)</span>
                                     </div>
                                     <input type="text" class="form-control w-50">
-                                    <img src="../fonts/resource.png" alt="upload" class="ml-5" width="40">
-                                    <input type="file" class='form-control opacity-zero' />
+                                    <img src="../fonts/resource.png" alt="game" class="ml-5 upload-img" width="40">
+                                    <input type="file" class='form-control opacity-zero' id="game" />
                                 </div>
-                            </div>
+                                <div class="col-12 text-right mr-5">
+                                    <button class="btn my-btn py-0">
+                                        确 定
+                                    </button>
+                                    <div class="talent-test pt-5">
+                                            <p class="mt-auto">
+                                                <p>离完成还差一步了！</p>
+                                                ↓来看看你是哪一种人才吧↓
+                                            </p>
+                                            <button class="btn btn-warning btn-lg px-4 btn-test" data-toggle="modal" data-target=".test-warn">人才测评</button>
+                                        </div>
+                                        <div class="modal fade test-warn" tabindex="-1" role="dialog" aria-hidden="true">
+                                                <div class="modal-dialog modal-dialog-centered">
+                                                    <div class="modal-content">
+                                                        <div class="modal-body">
+                                                            <button type="button" class="close modal-close" data-dismiss="modal" aria-label="Close">
+                                                                    <span aria-hidden="true">&times;</span>
+                                                                    </button>
+                                                            <h4 class="text-left">温馨提示</h4>
+                                                            <ul>
+                                                                <li>请在心态平和及时间充足的情况下才开始答题</li>
+                                                                <li>每题均有两个答案：A和B</li>
+                                                                <li>
+                                                                    请注意，题目的答案无对错之分，
+                                                                    你不要考虑那个答案“应该更好”
+                                                                    而且不要在任何问题上思考太久，
+                                                                    而是应该凭你心里的第一反应做出反应做出选择
+                                                                </li>
+                                                            </ul>
+                                                            <div class="text-right pr-4">
+                                                                <button class="btn my-btn py-0">确 定</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                </div>
+                            </div> -->
                         </div>
                     </div>
                 </div>
@@ -307,42 +667,51 @@
         </div>
         <!-- 底栏 -->
         <div class="footer py-5 mt-5">
-            <div class="row w-75 mx-auto">
-                <div class="col-2"><img src="../fonts/bottomLogo.png" alt="logo"></div>
-                <div class="col-2">
-                    <ul class="footer-ul">
-                        <li>学生版</li>
-                        <li>教师版</li>
-                        <li>企业版</li>
-                    </ul>
-                </div>
-                <div class="col-2">
-                    <ul class="footer-ul">
-                        <li>全部课程</li>
-                        <li>前沿资讯</li>
-                        <li>合作高校</li>
-                        <li>合作企业</li>
-                    </ul>
-                </div>
-                <div class="col-2 text-center">
-                    <p>关于我们</p>
-                    <img src="../fonts/bottomSR.png" alt="shengren" width="50">
-                </div>
-                <div class="col-2 text-center">
-                    <p>关注我们</p>
-                    <img src="../fonts/weixin.png" alt="shengren" width="50">
-                </div>
-                <div class="col-2">
-                    <ul class="footer-ul">
-                        <li>手机端下载</li>
-                    </ul>
+                <div class="row w-75 mx-auto">
+                    <div class="col-2"><img src="../fonts/bottomLogo.png" alt="logo"></div>
+                    <div class="col-2 pl-5">
+                           <p class="toggle-login">学生版</p> 
+                           <p class="toggle-login">教师版</p> 
+                           <p class="toggle-login">企业版</p> 
+                       
+                    </div>
+                    <div class="col-2">
+                        <ul class="footer-ul">
+                            <li>
+                                <a href="../explore/index.html">
+                                    全部课程
+                                </a>
+                            </li>
+                            <li><a href="../explore/front-news.html">
+                                    前沿资讯
+                                </a>
+                            </li>
+                            <li><a href="../partner/shools.html">
+                                    合作高校
+                                </a> </li>
+                            <li><a href="../partner/enterprises.html">
+                                    合作企业
+                                </a> </li>
+                        </ul>
+                    </div>
+                    <div class="col-2 text-center">
+                           <div><a href="../../aboutUs.html">关于我们</a></div>
+                        <img src="../fonts/bottomSR.png" alt="shengren" width="50">
+                    </div>
+                    <div class="col-2 text-center">
+                        <p>关注我们</p>
+                        <img src="../fonts/weixin.png" alt="shengren" width="50">
+                    </div>
+                    <div class="col-2">
+                            <p>手机端下载</p>
+                    </div>
                 </div>
             </div>
-        </div>
     </div>
     <script src="../../iframe/jquery.min.js"></script>
     <script src="../../iframe//bootstrap.bundle.min.js"></script>
     <script src="../public/index.js"></script>
+    <script src="./personal.js"></script>
 </body>
 
 </html>

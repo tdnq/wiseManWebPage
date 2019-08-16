@@ -1,30 +1,42 @@
-$(document).ready(function(){
+$(document).ready(function () {
+    // 搜索框
 
+
+    //登录注册
     (function(){
-        $("#explore-botton").click(function(){
-            var element = $(".explore-content");
-            var changeColorEle = $('.navbar');
-            this.innerText=this.innerText==="探索"?"收起":"探索";
-                if(element.css('display')==='block'){
-                    changeColorEle.css('background-color','#f8f9fa');
-                }else{
-                    changeColorEle.css('background-color','#0058b7');
-                }
-            element.slideToggle();
+        // 学生
+        var studentRegister = $("#studentRegister");
+        var student_singup = $(".student-signup");
+        var student_login = $(".student-login");
+        student_singup.css("display", "none");
+        studentRegister.click(function () {
+            student_login.hide();
+            student_singup.show();
         });
-        $('#title-course').click(function(){
-            console.log(1);
-            $(this).addClass('active');
-            $('#title-other').removeClass('active');
-            $('#item-other').addClass('d-none');
-            $('#item-course').removeClass('d-none');
+        //老师
+        var teacherRegister = $("#teacherRegister");
+        var teacher_singup = $(".teacher-signup");
+        var teacher_login = $(".teacher-login");
+        teacher_singup.css("display", "none");
+        teacherRegister.click(function () {
+            teacher_login.hide();
+            teacher_singup.show();
         });
-        $('#title-other').click(function(){
-            $(this).addClass('active');
-            $('#title-course').removeClass('active');
-            $('#item-course').addClass('d-none');
-            $('#item-other').removeClass('d-none');
+        // 企业
+        var enterpriseRegister = $("#enterpriseRegister");
+        var enterprise_singup = $(".enterprise-signup");
+        var enterprise_login = $(".enterprise-login");
+        enterprise_singup.css("display", "none");
+        enterpriseRegister.click(function () {
+            enterprise_login.hide();
+            enterprise_singup.show();
         });
-    })()
+
+        $('.toggle-login').click(function(e){
+            console.log($("#btn-login"))
+            $("#btn-login").trigger('click');
+           
+        });
+    })();
 
 });

@@ -19,7 +19,7 @@
                 <img src="../fonts/enNaLogo.png" width="40" height="40" alt="logo">
             </a>
             <a class="input-group ml-25 pl-5 mt-1 mr-auto" id="myInput">
-                <input type="text" class="form-control" placeholder="">
+                <input type="text" class="form-control" placeholder="科研成果检索">
                 <img src="../fonts/search.png" alt="search" width="38">
             </a>
             <span class="mr-5">
@@ -28,11 +28,12 @@
             </span>
         </nav>
         <!-- 内容 -->
-        <div class="row w-75 mx-auto teacher-content py-5">
+        <div class="main-content">
+        <div class="row w-75 mx-auto enterprise-content py-5">
                 <div class="col-3 tab-control pt-3 pb-5">
                     <!-- 信息 -->
                     <img src="../fonts/edit.png" class="edit-img" title="编辑信息" alt="edit">
-                    <div class="teacher-info text-center mt-2">
+                    <div class="enterprise-info text-center mt-2">
                         <div class="avator">
                             头像
                         </div>
@@ -52,90 +53,160 @@
                             <img src="../fonts/indexLine.png" alt="tab" width="450" height="3">
                         </div>
                     </div>
-                    <!-- 课程管理 -->
+                    <!-- 信息发布 -->
                     <div class="tab-pane fade" id="v-pills-courseManagement" role="tabpanel" aria-labelledby="v-pills-courseManagement-tab">
-                        <div class="tab-bar">
-                                <p class="mb-0 tab-title">信息发布</p>
-                                <img src="../fonts/indexLine.png" alt="tab" width="450" height="3">
-                            </div>
-                            <!-- 信息发布 -->
-   
+                            <div class="overHidden">
+                                    <nav>
+                                        <div class="nav nav-tabs border-bottom-0" id="nav-tab" role="tablist">
+                                            <a class="nav-item nav-link border-0 active" id="nav-qa-tab" data-toggle="tab"
+                                                href="#nav-qa" role="tab" aria-controls="nav-qa" aria-selected="true">已发布</a>
+                                            <a class="nav-item nav-link border-0" id="nav-exchange-tab" data-toggle="tab"
+                                                href="#nav-exchange" role="tab" aria-controls="nav-exchange" aria-selected="false">审核中</a>
+                                        </div>
+                                    </nav>
+                                    <img src="../fonts/line.png" alt="-----" class="segmentation">
+                                    <div class="tab-content py-1 px-2" id="nav-tabContent">
+                                            <div class="text-right">
+                                                    <button type="button" class="btn my-btn py-0" data-toggle="modal" data-target=".release-info">发 布</button>
+                                                    <div class="modal fade release-info" tabindex="-1" role="dialog" aria-labelledby="release-info" aria-hidden="true">
+                                                            <div class="modal-dialog modal-dialog-centered modal-sm">
+                                                              <div class="modal-content">
+                                                                    <div class="modal-header">
+                                                                        <span>请选择信息发布的类型:</span>
+                                                                    </div>
+                                                                    <div class="modal-body text-center">
+                                                                            <div class="form-check form-check-inline mr-5">
+                                                                                    <label class="form-check-label" for="inlineRadio1">资讯信息</label>
+                                                                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                                                                                  </div>
+                                                                                  <div class="form-check form-check-inline">
+                                                                                    <label class="form-check-label" for="inlineRadio2">实习信息</label>
+                                                                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                                                                            </div>
+                                                                    </div>
+                                                                    <div class="modal-footer border-top-0 pt-0">
+                                                                            <button type="button" class="btn my-btn py-0" data-dismiss="modal">确 定</button>
+                                                                    </div>
+                                                              </div>
+                                                            </div>
+                                                          </div>
+                                            </div>
+                                            <div class="tab-pane px-0 fade  show active" id="nav-qa" role="tabpanel">
+                                                    <div class="single-practice">
+                                                            <div class="row mx-auto px-4 py-3">
+                                                                <div class="col-8">
+                                                                    <div class="practice-title">
+                                                                        企业·职位
+                                                                    </div>
+                                                                    <div class="practice-time mt-3">
+                                                                        实习时间
+                                                                    </div>
+                                                                    <div class="practice-address mt-2">
+                                                                        实习地点
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-4 text-center">
+                                                                    <div class="practice-salary mt-3">
+                                                                        薪资
+                                                                    </div>
+                                                                    <div class="edit-info mt-4 ml-5">
+                                                                        <span>修改</span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                    </div>
+                                            </div>
+                                            <div class="tab-pane fade position-relative" id="nav-exchange" role="tabpanel">
+                                                
+                                            </div>
+                                    </div>
+                            </div> 
                     </div>
-                    <!-- 消息部分 -->
+                    <!-- 消息通知 -->
                     <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
                         <!-- title -->
-                        <div class="tab-bar">
-                                <p class="mb-0 tab-title">消息通知</p>
-                                <img src="../fonts/indexLine.png" alt="tab" width="450" height="3">
-                            </div>
-                            <div class="position-relative chat-window pb-3">
-                                <!-- 对话框 -->
-                                <span class="qa-font"><img src="../fonts/qa.png" alt="aq"></span>
-                                <div class="open-img text-right">
-                                    <img src="../fonts/shouQi.png" alt="close">
+                            <div class="tab-bar">
+                                    <p class="mb-0 tab-title">消息通知</p>
+                                    <img src="../fonts/indexLine.png" alt="tab" width="450" height="3">
                                 </div>
-                                <div class="qa-title my-4 pl-5">
-                                    <!-- <h5>xx同学在xx课程xx单元中向你提问</h5> -->
+                            <div class="message-title position-relative px-2">
+                                    <span class="qa-font"><img src="../fonts/qa.png" alt="aq"></span>
+                                    <div class="open-img text-right">
+                                        <img src="../fonts/shouQi.png" title="展开" id="message-control" alt="close">
+                                    </div>
+                                    <div class="qa-title pt-3 pb-2">
+                                        <h4 class="pl-4">xx老师答复了你</h4>
+                                    </div>
                                 </div>
-                                <!-- 学生 -->
-                                <div class="teacher row">
-                                    <div class="col-2">
-                                        <div class="teacher-avatar d-flex">
-                                            <div class="avatar-content">
-    
+                                <div class="message-content pb-3">
+                                    <!-- 老师 -->
+                                    <div class="teacher row">
+                                        <div class="col-2">
+                                            <div class="teacher-avatar d-flex">
+                                                <div class="avatar-content">
+        
+                                                </div>
+                                            </div>
+        
+                                        </div>
+                                        <div class="col-8">
+                                            <div class="answer">
+                                                <div class="answer-content">
+                                                    是非成败转头空
+                                                    是非成败转头空
+                                                    是非成败转头空
+                                                    是非成败转头空
+                                                    是非成败转头空
+                                                    是非成败转头空
+                                                </div>
                                             </div>
                                         </div>
-    
                                     </div>
-                                    <div class="col-8">
-                                        <div class="answer">
-                                            <div class="answer-content">
-                                                <!-- 是非成败转头空
-                                                是非成败转头空
-                                                是非成败转头空
-                                                是非成败转头空
-                                                是非成败转头空
-                                                是非成败转头空 -->
-                                            </div>
+                                    <div class="row diolog mt-5">
+                                        <div class="col-8 offset-lg-2">
+                                            <input type="text" class="form-control" placeholder="">
+                                        </div>
+                                        <div class="col-2">
+                                            <button class="btn send-button px-3">发送</button>
                                         </div>
                                     </div>
                                 </div>
-    
-                                <div class="row diolog mt-5">
-                                    <div class="col-8 offset-lg-2">
-                                        <input type="text" class="form-control" placeholder="">
-                                    </div>
-                                    <div class="col-2">
-                                        <button class="btn send-button px-3">发送</button>
-                                    </div>
-                                </div>
-                                
-                            </div>
                     </div>
                   </div>
                 </div>
             </div>
+        </div>
         <!-- 底栏 -->
         <div class="footer py-5">
                 <div class="row w-75 mx-auto">
                     <div class="col-2"><img src="../fonts/bottomLogo.png" alt="logo"></div>
-                    <div class="col-2">
-                        <ul class="footer-ul">
-                            <li>学生版</li>
-                            <li>教师版</li>
-                            <li>企业版</li>
-                        </ul>
+                    <div class="col-2 pl-5">
+                           <p class="toggle-login">学生版</p> 
+                           <p class="toggle-login">教师版</p> 
+                           <p class="toggle-login">企业版</p> 
+                       
                     </div>
                     <div class="col-2">
                         <ul class="footer-ul">
-                            <li>全部课程</li>
-                            <li>前沿资讯</li>
-                            <li>合作高校</li>
-                            <li>合作企业</li>
+                            <li>
+                                <a href="../explore/index.html">
+                                    全部课程
+                                </a>
+                            </li>
+                            <li><a href="../explore/front-news.html">
+                                    前沿资讯
+                                </a>
+                            </li>
+                            <li><a href="../partner/shools.html">
+                                    合作高校
+                                </a> </li>
+                            <li><a href="../partner/enterprises.html">
+                                    合作企业
+                                </a> </li>
                         </ul>
                     </div>
                     <div class="col-2 text-center">
-                        <p>关于我们</p>
+                           <div><a href="../../aboutUs.html">关于我们</a></div>
                         <img src="../fonts/bottomSR.png" alt="shengren" width="50">
                     </div>
                     <div class="col-2 text-center">
@@ -143,9 +214,7 @@
                         <img src="../fonts/weixin.png" alt="shengren" width="50">
                     </div>
                     <div class="col-2">
-                        <ul class="footer-ul">
-                            <li>手机端下载</li>
-                        </ul>
+                            <p>手机端下载</p>
                     </div>
                 </div>
             </div>

@@ -4,5 +4,6 @@ $(document).ready(function(){
         var index=$(this).index();
         console.log(index);
         
-    })
+    });
+
 });
